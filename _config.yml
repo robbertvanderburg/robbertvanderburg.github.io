@@ -1,10 +1,10 @@
 # Site settings
-title: Robbert van der Burg — Researcher @ VU
+title: Robbert van der Burg — PhD @ VU
 description: >-
   Academic website of Rob, PhD candidate at VU University Amsterdam.
   Probability theory, network science, and applied statistics.
 baseurl: "" # e.g. "/your-repo-name" if not using custom domain
-url: "" # e.g. "https://yourusername.github.io"
+url: "https://burgrvander1.github.io/" # e.g. "https://yourusername.github.io"
 
 # Author
 author:
@@ -42,6 +42,7 @@ defaults:
 # Plugins (GitHub Pages supported)
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from build
 exclude:
