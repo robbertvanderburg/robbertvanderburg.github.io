@@ -1,83 +1,65 @@
-# Academic Website — Jekyll + GitHub Pages
+# Academic Website
 
-A clean, modern academic website with wine-red accent colors and dark/light mode support.
+Personal academic website built with Jekyll and hosted on GitHub Pages.
 
-## Quick Setup
+## File overview
 
-### 1. Create a GitHub repository
-
-Create a new repository named `yourusername.github.io` (replace `yourusername` with your actual GitHub username).
-
-### 2. Push this site
-
-```bash
-cd site
-git init
-git add .
-git commit -m "Initial academic website"
-git branch -M main
-git remote add origin https://github.com/yourusername/yourusername.github.io.git
-git push -u origin main
+```
+├── _config.yml                  # Site-wide settings: name, bio, social links,
+│                                  Semantic Scholar ID, SEO metadata, plugins
+│
+├── _layouts/
+│   └── default.html             # Master HTML template wrapping every page
+│                                  (nav, footer, theme toggle, JSON-LD structured data)
+│
+├── _includes/
+│   ├── nav.html                 # Top navigation bar with dark/light mode toggle
+│   └── footer.html              # Page footer
+│
+├── _data/
+│   └── news.yml                 # News items shown on the About page
+│                                  (add entries here to announce papers, talks, etc.)
+│
+├── assets/
+│   ├── css/
+│   │   └── style.scss           # All styling — colors, typography, layout, dark/light
+│   │                              mode via CSS custom properties
+│   ├── js/
+│   │   ├── theme.js             # Dark/light toggle logic (persists choice, detects
+│   │   │                          system preference)
+│   │   └── publications.js      # Fetches papers from Semantic Scholar API, renders
+│   │                              them with search and year filter
+│   └── images/                  # Profile photo and other images
+│
+├── index.html                   # About page — profile card, research interests, news
+├── publications.html            # Publications page — auto-populated from Semantic Scholar
+├── cv.html                      # CV page — education timeline, research, skills, teaching
+│
+├── favicon.svg                  # Browser tab icon (wine-red "R")
+├── robots.txt                   # Tells search engines where to find sitemap.xml
+├── Gemfile                      # Ruby dependencies for Jekyll
+└── README.md                    # This file
 ```
 
-### 3. Enable GitHub Pages
+## How to update content
 
-Go to your repository → **Settings** → **Pages** → set source to **GitHub Actions** (or "Deploy from a branch" → `main`).
-
-Your site will be live at `https://yourusername.github.io` within a minute or two.
-
-### 4. Configure your details
-
-Edit `_config.yml` and fill in:
-
-```yaml
-author:
-  name: Your Name
-  email: your.email@vu.nl
-  semantic_scholar: "YOUR_SEMANTIC_SCHOLAR_ID"   # ← Required for auto-publications
-  google_scholar: "YOUR_GOOGLE_SCHOLAR_ID"
-  orcid: "0000-0000-0000-0000"
-  github: "yourusername"
-  linkedin: "yourprofile"
-```
-
-#### Finding your Semantic Scholar author ID
-
-1. Go to [semanticscholar.org](https://www.semanticscholar.org/)
-2. Search for your name and find your profile
-3. Your author ID is the number at the end of the URL:
-   `https://www.semanticscholar.org/author/Your-Name/1234567` → ID is `1234567`
-
-### 5. Add your photo
-
-Replace `assets/images/profile-placeholder.svg` with your photo saved as `assets/images/profile.jpg`, then update `index.html`:
-
-```html
-<img src="{{ '/assets/images/profile.jpg' | relative_url }}" ...>
-```
-
-## Updating Content
-
-### Add news items
-
-Edit `_data/news.yml`:
-
+**News items** — edit `_data/news.yml`, newest entry first:
 ```yaml
 - date: 2026-04-01
-  text: "Your news here. HTML is supported for <a href='...'>links</a> and <em>emphasis</em>."
+  text: "Your update here. HTML like <a href='...'>links</a> and <em>emphasis</em> works."
 ```
 
-### Edit your bio / CV
+**Bio and research interests** — edit `index.html` directly.
 
-- **About page**: Edit `index.html`
-- **CV page**: Edit `cv.html` — fill in dates, add teaching, talks, etc.
-- **Publications**: Automatic from Semantic Scholar! Just set your author ID.
+**CV entries** — edit `cv.html`. Follow the existing pattern for timeline entries and cards.
 
-### Dark / Light Mode
+**Publications** — automatic. Set your Semantic Scholar author ID in `_config.yml` under `author.semantic_scholar`. Papers update on each page load.
 
-The toggle in the nav bar persists the user's choice via `localStorage`. It also auto-detects system preference (`prefers-color-scheme`) as a default.
+**Profile photo** — replace the placeholder in `assets/images/` and update the `<img>` src in `index.html`.
 
-## Local Development
+**Social/contact links** — edit the author fields in `_config.yml`. Links with empty values are hidden automatically.
+
+## Local development
 
 ```bash
 gem install bundler
@@ -86,28 +68,3 @@ bundle exec jekyll serve
 ```
 
 Then visit `http://localhost:4000`.
-
-## File Structure
-
-```
-├── _config.yml           # Site settings & author info
-├── _data/
-│   └── news.yml           # News items for the About page
-├── _includes/
-│   ├── nav.html            # Navigation bar
-│   └── footer.html         # Footer
-├── _layouts/
-│   └── default.html        # Main page layout
-├── assets/
-│   ├── css/style.scss      # All styles (dark/light mode)
-│   ├── js/theme.js         # Theme toggle logic
-│   ├── js/publications.js  # Semantic Scholar fetcher
-│   └── images/             # Profile photo goes here
-├── index.html              # About page
-├── publications.html       # Publications page
-└── cv.html                 # CV page
-```
-
-## License
-
-Feel free to use and modify this template for your own academic website.
