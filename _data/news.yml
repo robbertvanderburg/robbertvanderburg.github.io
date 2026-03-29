@@ -1,0 +1,13 @@
+# Add news items here — newest first.
+# Format:
+#   - date: YYYY-MM-DD
+#     text: "Your news text. You can use <a href='...'>links</a> in HTML."
+
+- date: 2026-03-15
+  text: "New preprint on non-standard random walks with edge weights submitted to <em>Operations Research</em>."
+
+- date: 2026-02-01
+  text: "Started developing a comparison framework for probabilistic models (Ising, Bayesian hierarchical, independent Bernoulli) applied to infrastructure failure analysis."
+
+- date: 2025-09-01
+  text: "Began PhD in Mathematics at VU University Amsterdam, working on probability theory, network science, and applied statistics."
