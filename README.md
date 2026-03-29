@@ -43,6 +43,8 @@ Personal academic website built with Jekyll and hosted on GitHub Pages.
 
 ## How to update content
 
+For big changes, create a new branch (this way, the website is not changed "live").
+
 **News items** — edit `_data/news.yml`, newest entry first:
 ```yaml
 - date: 2026-04-01
