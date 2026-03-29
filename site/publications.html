@@ -1,0 +1,34 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+
+<div class="fade-in">
+  <div class="section-header">
+    <h2>Publications</h2>
+  </div>
+
+  <p style="margin-bottom: 1.5rem; color: var(--text-secondary); font-size: 0.92rem;">
+    Automatically fetched from <a href="https://www.semanticscholar.org/" target="_blank">Semantic Scholar</a>.
+    If a paper is missing, it may take a few days for newly indexed work to appear.
+  </p>
+
+  <div class="pub-controls">
+    <div class="pub-search-wrapper">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="text" id="pub-search" class="pub-search" placeholder="Search by title, author, or venue…">
+    </div>
+    <select id="pub-year-filter" class="pub-year-filter">
+      <option value="">All years</option>
+    </select>
+  </div>
+
+  <div id="pub-count" class="pub-count"></div>
+
+  <!-- Set your Semantic Scholar author ID here -->
+  <div id="pub-container" data-author-id="{{ site.author.semantic_scholar }}">
+  </div>
+</div>
