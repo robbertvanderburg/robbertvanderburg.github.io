@@ -74,8 +74,7 @@ html {
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background: transparent;
-  min-height: 100vh;
+  background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.7;
   font-size: 16px;
@@ -113,10 +112,8 @@ a:hover { color: var(--wine-light); }
 
 .page-content {
   padding-top: 6rem;
-  padding-bottom: 35vh;
-  position: relative;
-  z-index: 1;
-  background: var(--bg-primary);
+  padding-bottom: 4rem;
+  min-height: 100vh;
 }
 
 /* ---------- Navigation ---------- */
@@ -657,21 +654,17 @@ a:hover { color: var(--wine-light); }
 }
 
 .site-footer a { color: var(--wine); }
+
 /* ---------- Network Background ---------- */
 .network-footer-wrapper {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 35vh;
-  z-index: 0;
-  pointer-events: none;
+  position: relative;
+  width: 100%;
 }
 
 .network-canvas {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 35vh;
 }
 
 .network-fade {
@@ -692,13 +685,6 @@ a:hover { color: var(--wine-light); }
   right: 0;
   border-top: none;
   background: transparent;
-  pointer-events: auto;
-}
-
-.page-content {
-  position: relative;
-  z-index: 1;
-  background: var(--bg-primary);
 }
 
 /* ---------- Animations ---------- */
