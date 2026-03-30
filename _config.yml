@@ -16,9 +16,9 @@ author:
   address: De Boelelaan 1111, 1081 HV Amsterdam
   google_scholar: "" # Your Google Scholar ID (the part after user= in your profile URL)
   semantic_scholar: "" # Your Semantic Scholar author ID
-  orcid: "https://orcid.org/0009-0007-4945-6120"
-  github: "https://github.com/burgrvander1"
-  linkedin: "https://www.linkedin.com/in/robbert-van-der-burg/"
+  orcid: "0009-0007-4945-6120"
+  github: "burgrvander1"
+  linkedin: "robbert-van-der-burg/"
 
 # Build settings
 markdown: kramdown
