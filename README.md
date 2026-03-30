@@ -1,5 +1,7 @@
 # Academic Website
 
+## I STILL HAVE TO ADD MY SEMANTIC SCHOLAR AUTHOR-ID TO AUTOMATICALLY UPDATE PUBLICATIONS!!!
+
 Personal academic website built with Jekyll and hosted on GitHub Pages.
 
 ## File overview
