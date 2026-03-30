@@ -78,7 +78,7 @@ body {
   color: var(--text-primary);
   line-height: 1.7;
   font-size: 16px;
-  transition: background var(--transition), color var(--transition);
+  transition: background var(--bg-primary), color var(--text-primary);
   -webkit-font-smoothing: antialiased;
   display: flex;
   flex-direction: column;
