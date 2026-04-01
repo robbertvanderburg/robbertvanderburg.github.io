@@ -5,16 +5,17 @@
   const ctx = canvas.getContext('2d');
   let width, height, nodes, animId;
 
-  const NUM_NODES = 60;
-  const CONNECT_DIST = 120;
+  const NUM_NODES = 69;
+  const CONNECT_DIST = 100;
   const DRIFT_SPEED = 0.15;
 
-  function getColors() {
+function getColors() {
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     return {
-      node: isDark ? 'rgba(196, 107, 122, 0.6)' : 'rgba(123, 45, 59, 0.45)',
-      nodeCenter: isDark ? 'rgba(196, 107, 122, 0.9)' : 'rgba(123, 45, 59, 0.7)',
-      edge: isDark ? 'rgba(196, 107, 122, 0.12)' : 'rgba(123, 45, 59, 0.08)',
+      // Increased opacity for nodes
+      nodeCenter: isDark ? 'rgba(196, 107, 122, 1)' : 'rgba(123, 45, 59, 0.9)',
+      // Higher base opacity for edges
+      edge: isDark ? 'rgba(196, 107, 122, 0.4)' : 'rgba(123, 45, 59, 0.3)',
     };
   }
 
@@ -54,21 +55,25 @@ function resize() {
       if (n.y > height + 20) n.y = -20;
     }
   }
-
-  function draw() {
+function draw() {
     const colors = getColors();
     ctx.clearRect(0, 0, width, height);
 
     // Draw edges
-    ctx.strokeStyle = colors.edge;
-    ctx.lineWidth = 0.8;
+    ctx.lineWidth = 1.0; // Slightly thicker lines
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i + 1; j < nodes.length; j++) {
         const dx = nodes[i].x - nodes[j].x;
         const dy = nodes[i].y - nodes[j].y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < CONNECT_DIST) {
-          const alpha = 1 - dist / CONNECT_DIST;
+        const distSq = dx * dx + dy * dy; // Use squared distance for performance
+        const maxDistSq = CONNECT_DIST * CONNECT_DIST;
+
+        if (distSq < maxDistSq) {
+          const dist = Math.sqrt(distSq);
+          // Changed logic: ensure alpha doesn't drop to 0 too quickly
+          const alpha = (1 - dist / CONNECT_DIST) * 0.8; 
+          
+          ctx.strokeStyle = colors.edge;
           ctx.globalAlpha = alpha;
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
@@ -77,6 +82,21 @@ function resize() {
         }
       }
     }
+
+    // Draw nodes
+    ctx.globalAlpha = 1;
+    for (const n of nodes) {
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+      ctx.fillStyle = colors.nodeCenter;
+      ctx.fill();
+      
+      // Optional: Add a small glow/ring to nodes to make them feel more solid
+      ctx.strokeStyle = colors.edge;
+      ctx.lineWidth = 0.5;
+      ctx.stroke();
+    }
+  }
 
     // Draw nodes
     ctx.globalAlpha = 1;
