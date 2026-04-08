@@ -1,10 +1,10 @@
 # Site settings
-title: Robbert van der Burg — PhD @ VU
+title: Robbert van der Burg
 description: >-
   Academic website of Rob, PhD candidate at VU University Amsterdam.
   Probability theory, network science, and applied statistics.
 baseurl: "" # e.g. "/your-repo-name" if not using custom domain
-url: "https://burgrvander1.github.io" # e.g. "https://yourusername.github.io"
+url: "https://robbertvanderburg.github.io" # e.g. "https://yourusername.github.io"
 
 # Author
 author:
@@ -17,7 +17,7 @@ author:
   google_scholar: "" # Your Google Scholar ID (the part after user= in your profile URL)
   semantic_scholar: "" # Your Semantic Scholar author ID
   orcid: "0009-0007-4945-6120"
-  github: "burgrvander1"
+  github: "robbertvanderburg"
   linkedin: "robbert-van-der-burg/"
 
 # Build settings
