@@ -5,6 +5,8 @@
 #pycache
 __pycache__/
 
+_site/
 
 # output files
 *.png
+Gemfile.lock
