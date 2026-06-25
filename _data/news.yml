@@ -3,8 +3,11 @@
 #   - date: YYYY-MM-DD
 #     text: "Your news text. You can use <a href='...'>links</a> in HTML."
 
+- date: 2026-06-24
+  text: "<b>NetSci Presentation!</b> I presented recent joint work with Alessandro Zocca and Frank van der Meulen at the NetSci Summer Symposium 2026. The talk, Bayesian Recovery of Dependence Structures on Networks, explores how empirical Bayesian parameter estimation can be used to distinguish genuine network-driven dependence from correlations induced by external covariates. The project combines covariate-dependent Ising models with spike-and-slab priors to recover dependence structures while quantifying uncertainty in the inferred network. A preprint describing the methodology and results will be available soon. Slides <a href='NetSci_Presentation_fin.pdf' download='NetSci_Robbert'>here</a>."
+
 - date: 2026-03-30
-  text: "New preprint on non-standard random walks with edge weights <a href='https://doi.org/10.48550/arXiv.2603.26414'>available on arXiv</a>."
+  text: "<b>New Preprint available!</b> Together with Thao Le, Bernd Heidergott, Ines Lindner and Alessandro Zocca, we have just finished a new paper titled 'Random Walks with Traversal Costs: Variance-Aware Performance Analysis and Network Optimization'. We introduce weighted Markovian graphs, a framework that decouples random walk dynamics from (possibly stochastic) edge traversal costs, and derive closed-form expressions for the mean and variance of weighted first passage times and Kemeny constants. We showcase the framework through two applications to surveillance patrol policies and traffic network optimization under disruptions. Preprint <a href='https://doi.org/10.48550/arXiv.2603.26414'>available on arXiv</a>."
 
 - date: 2025-10-01
-  text: "Began PhD in Mathematics at VU University Amsterdam, working on probability theory, network science, and applied statistics."
+  text: "<b>Phd Started!</b> Began PhD in Mathematics at VU University Amsterdam, working on probability theory, network science, and applied statistics."
