@@ -1,0 +1,21 @@
+---
+layout: default
+title: News
+permalink: /news/
+description: "News and updates from Robbert van der Burg — presentations, preprints, and milestones."
+---
+
+<div class="fade-in">
+  <div class="section-header">
+    <h2>News</h2>
+  </div>
+
+  <div class="news-section">
+    {% for item in site.data.news %}
+    <div class="news-item">
+      <span class="news-date">{{ item.date | date: "%b %Y" }}</span>
+      <p class="news-text">{{ item.text }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

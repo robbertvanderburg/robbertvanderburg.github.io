@@ -133,10 +133,14 @@ description: "Academic website of Robbert van der Burg, PhD candidate in Applied
 </div>
 
 <div class="news-section fade-in">
-  {% for item in site.data.news limit:8 %}
+  {% for item in site.data.news limit:3 %}
   <div class="news-item">
     <span class="news-date">{{ item.date | date: "%b %Y" }}</span>
     <p class="news-text">{{ item.text }}</p>
   </div>
   {% endfor %}
+</div>
+
+<div class="fade-in" style="margin-top: 1rem; text-align: right;">
+  <a href="{{ '/news/' | relative_url }}" class="see-more-link">See more &rarr;</a>
 </div>
