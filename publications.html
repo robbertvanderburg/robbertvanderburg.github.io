@@ -12,9 +12,12 @@ description: "Publications by Robbert van der Burg — research on random walks,
 
   <p style="margin-bottom: 1.5rem; color: var(--text-secondary); font-size: 0.92rem;">
     Automatically fetched from <a href="https://www.openalex.org/" target="_blank">OpenAlex</a>, also available on <a href="https://scholar.google.com/citations?user=P0s9gOoAAAAJ" target="_blank">Google Scholar</a>.
-    If a paper is missing, it may take a few days for newly indexed work to appear.
+    Updated daily — if a paper is missing, it may take a few days for newly indexed work to appear.
   </p>
 
+  {% assign pubs = site.data.publications %}
+
+  {% if pubs and pubs.size > 0 %}
   <div class="pub-controls">
     <div class="pub-search-wrapper">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -22,14 +25,46 @@ description: "Publications by Robbert van der Burg — research on random walks,
       </svg>
       <input type="text" id="pub-search" class="pub-search" placeholder="Search by title, author, or venue…">
     </div>
+    {% assign years = pubs | map: "year" | compact | uniq | sort | reverse %}
     <select id="pub-year-filter" class="pub-year-filter">
       <option value="">All years</option>
+      {% for y in years %}
+      <option value="{{ y }}">{{ y }}</option>
+      {% endfor %}
     </select>
   </div>
 
-  <div id="pub-count" class="pub-count"></div>
+  <div id="pub-count" class="pub-count">{{ pubs.size }} paper{% if pubs.size != 1 %}s{% endif %}</div>
 
-  <!-- Set your OpenAlex author ID here -->
-  <div id="pub-container" data-author-id="{{ site.author.openalex }}">
+  <div id="pub-container">
+    <ul class="pub-list">
+      {% for p in pubs %}
+      <li class="pub-item fade-in"
+          data-title="{{ p.title | downcase | escape }}"
+          data-authors="{{ p.authors | downcase | escape }}"
+          data-venue="{{ p.venue | downcase | escape }}"
+          data-year="{{ p.year }}">
+        <div class="pub-title">
+          {% if p.url %}<a href="{{ p.url }}" target="_blank">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+          {% if p.year %}<span class="pub-year-badge">{{ p.year }}</span>{% endif %}
+        </div>
+        <div class="pub-authors">{{ p.authors }}</div>
+        {% if p.venue and p.venue != "" %}<div class="pub-venue">{{ p.venue }}</div>{% endif %}
+        <div class="pub-links">
+          {% if p.url %}<a href="{{ p.url }}" class="pub-link" target="_blank">Paper</a>{% endif %}
+          {% if p.doi and p.doi != "" %}<a href="https://doi.org/{{ p.doi }}" class="pub-link" target="_blank">DOI</a>{% endif %}
+          {% if p.arxiv and p.arxiv != "" %}<a href="https://arxiv.org/abs/{{ p.arxiv }}" class="pub-link" target="_blank">arXiv</a>{% endif %}
+          {% if p.oaPdf and p.oaPdf != "" %}<a href="{{ p.oaPdf }}" class="pub-link" target="_blank">PDF</a>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
+  {% else %}
+  <p class="pub-error">
+    The publication list is generated automatically and hasn't run yet — in the meantime, see the full list on
+    <a href="https://scholar.google.com/citations?user=P0s9gOoAAAAJ" target="_blank">Google Scholar</a>
+    or <a href="https://openalex.org/authors/{{ site.author.openalex }}" target="_blank">OpenAlex</a>.
+  </p>
+  {% endif %}
 </div>
