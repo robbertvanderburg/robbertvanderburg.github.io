@@ -37,11 +37,6 @@ description: "Academic website of Robbert van der Burg, PhD candidate in Applied
 </script>
 
 <section class="profile-section fade-in">
-  <div class="profile-photo-wrapper">
-    <!-- Replace with your photo: save as assets/images/profile.jpg -->
-    <img src="{{ '/assets/images/Pasfoto_website.jpg' | relative_url }}" alt="Photo of {{ site.author.name }}" class="profile-photo" style="object-fit: contain;">
-  </div>
-
   <div class="profile-info">
     <h1>{{ site.author.name }}</h1>
     <p class="position">{{ site.author.position }}</p>
@@ -89,6 +84,10 @@ description: "Academic website of Robbert van der Burg, PhD candidate in Applied
       </a>
       {% endif %}
     </div>
+  </div>
+
+  <div class="profile-photo-wrapper">
+    <img src="{{ '/assets/images/Pasfoto_website.jpg' | relative_url }}" alt="Photo of {{ site.author.name }}" class="profile-photo">
   </div>
 </section>
 
