@@ -223,7 +223,7 @@ a:hover { color: var(--wine-light); }
 /* ---------- About Page: Profile Card ---------- */
 .profile-section {
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: 1fr 240px;
   gap: 2.5rem;
   align-items: start;
   margin-bottom: 3rem;
@@ -236,7 +236,7 @@ a:hover { color: var(--wine-light); }
   }
   .profile-photo-wrapper {
     order: -1;
-    max-width: 320px;
+    max-width: 240px;
     margin: 0 auto;
   }
 }
