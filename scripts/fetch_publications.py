@@ -117,8 +117,16 @@ def normalize(work: dict) -> dict:
 def main() -> None:
     author_id = get_author_id()
     works = fetch_works(author_id)
+    if not works:
+        # Most likely an API hiccup; keep the existing list rather than wiping it.
+        sys.exit("OpenAlex returned no works; leaving publications.yml unchanged")
+    # Newest first, with title as tie-breaker so the output is deterministic
+    # and the scheduled job only commits when something actually changed.
+    works.sort(
+        key=lambda w: (w.get("publication_date") or "", w.get("title") or ""),
+        reverse=True,
+    )
     pubs = [normalize(w) for w in works]
-    pubs.sort(key=lambda p: (p["year"] or 0), reverse=True)
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_PATH, "w") as f:
