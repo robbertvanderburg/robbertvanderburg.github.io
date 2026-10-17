@@ -11,6 +11,7 @@ Run manually:
 
 Normally this runs on a schedule via .github/workflows/update-publications.yml.
 """
+
 from __future__ import annotations
 
 import re
