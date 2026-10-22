@@ -15,11 +15,19 @@ author:
   department: Department of Mathematics
   address: De Boelelaan 1111, 1081 HV Amsterdam
   google_scholar: "P0s9gOoAAAAJ" # Your Google Scholar ID (the part after user= in your profile URL)
-  semantic_scholar: "" # Your Semantic Scholar author ID
-  openalex: "A5130935091"
+  semantic_scholar: "2491518526" # Semantic Scholar author ID; the Publications page is fetched from it
   orcid: "0009-0007-4945-6120"
   github: "robbertvanderburg"
   linkedin: "robbert-van-der-burg/"
+
+# Papers on the Semantic Scholar author page to hide from the Publications page
+# (paper IDs, the last part of a semanticscholar.org/paper/... URL).
+# These were attributed to a different R. van der Burg.
+semantic_scholar_exclude:
+  - 8c766a47aa4e9548157369389e1abbdaeb6698a1 # Are we restoring functional fens? (2019)
+  - 27b60991b6b4282beeccfe1321ba94983b5d8524 # Regime shift in bossen op zandgronden (2016)
+  - 3eb1c4d08c03870ad3e207e1751fa57c4b09057c # Kansen voor biodiversiteit in vochtige dekzandbossen (2016)
+  - d856dc95a3ca0bc87454909c21a8c75b31b4c513 # Preadvies voor herstel en ontwikkeling van vochtige bossen (2014)
 
 # Build settings
 markdown: kramdown

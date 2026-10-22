@@ -10,14 +10,15 @@ Personal academic website of Robbert van der Burg, PhD candidate in the Departme
 | ------------ | ------------------- | ----------------------------------------------------------- |
 | About        | `index.html`        | Profile card, research interests, three latest news items   |
 | News         | `news.html`         | Full list of news items from `_data/news.yml`               |
-| Publications | `publications.html` | Paper list rendered from `_data/publications.yml`           |
+| Publications | `publications.html` | Paper list fetched live from Semantic Scholar               |
 | CV           | `cv.html`           | Education timeline, research, skills, teaching              |
 
 ## File overview
 
 ```
 ├── _config.yml                  # Site-wide settings: title, author info, social and
-│                                  scholar IDs (OpenAlex, Google Scholar, ORCID), plugins
+│                                  scholar IDs (Semantic Scholar, Google Scholar, ORCID),
+│                                  excluded papers, plugins
 │
 ├── _layouts/
 │   └── default.html             # Master template wrapping every page
@@ -28,8 +29,7 @@ Personal academic website of Robbert van der Burg, PhD candidate in the Departme
 │   └── footer.html              # Page footer (also loads the network background)
 │
 ├── _data/
-│   ├── news.yml                 # News items, newest first (shown on About and News)
-│   └── publications.yml         # AUTO-GENERATED publication list — do not edit by hand
+│   └── news.yml                 # News items, newest first (shown on About and News)
 │
 ├── assets/
 │   ├── css/style.scss           # All styling: colours, typography, layout, and dark/light
@@ -38,15 +38,9 @@ Personal academic website of Robbert van der Burg, PhD candidate in the Departme
 │   │   ├── theme.js             # Dark/light toggle (remembers the choice, follows the
 │   │   │                          system preference by default)
 │   │   ├── network.js           # Animated network graph drawn on the header canvas
-│   │   └── publications.js      # Search and year filter on the Publications page
+│   │   └── publications.js      # Fetches papers from Semantic Scholar and renders them
+│   │                              with search and year filter on the Publications page
 │   └── images/                  # Profile photo and favicons
-│
-├── scripts/
-│   └── fetch_publications.py    # Pulls works from the OpenAlex API → _data/publications.yml
-│
-├── .github/workflows/
-│   └── update-publications.yml  # Daily GitHub Action that runs the script above and
-│                                  commits any changes
 │
 ├── *.pdf                        # Talk slides, linked from news items
 ├── googlec7394654ebbf34ba.html  # Google Search Console verification — keep it
@@ -81,19 +75,13 @@ Slides <a href='My_Talk.pdf' download='My_Talk_Robbert'>here</a>.
 
 ### Publications
 
-Publications update **automatically**. Every day at 04:17 UTC, the GitHub Action in `.github/workflows/update-publications.yml` runs `scripts/fetch_publications.py`. The script pulls your works from [OpenAlex](https://openalex.org/) (author ID in `_config.yml` under `author.openalex`) and writes them to `_data/publications.yml`. If the list changed, the action commits the file and the site rebuilds. Because the list is part of the static HTML, search engines see every paper.
+Publications update **automatically**. The Publications page fetches your papers in the visitor's browser from the [Semantic Scholar API](https://api.semanticscholar.org/), using the author ID in `_config.yml` under `author.semantic_scholar`. There is nothing to run or commit: once a paper appears on your [Semantic Scholar author page](https://www.semanticscholar.org/author/2491518526), it appears on the site.
 
-- **Run it now:** on GitHub, open **Actions → Update publications → Run workflow**.
-- **Run it locally:**
-  ```bash
-  pip install requests pyyaml
-  python scripts/fetch_publications.py
-  ```
-  Then commit `_data/publications.yml`.
-- Newly posted papers can take a few days to show up in OpenAlex.
-- Don't edit `_data/publications.yml` by hand, because the next run overwrites it.
-- GitHub pauses scheduled actions in repositories with no activity for 60 days. If that happens, re-enable the workflow from the Actions tab.
-- Run `git pull` before you start editing, because the bot may have pushed a commit since your last pull.
+- **Hide a paper:** add its Semantic Scholar paper ID (the last part of a `semanticscholar.org/paper/...` URL) to `semantic_scholar_exclude` in `_config.yml`. Better still, remove it from your claimed author page on Semantic Scholar, which fixes it everywhere.
+- **Missing or wrong paper details:** correct them on Semantic Scholar; newly posted papers can take a few days to be indexed.
+- Each browser caches the list for a day, so changes may take up to a day to show for returning visitors.
+- The anonymous API is rate limited. The page retries automatically and falls back to the cached copy; if both fail, it links to Semantic Scholar instead.
+- Because the list is loaded with JavaScript, it is not part of the static HTML that search engines index.
 
 ### Bio, research interests, CV
 
