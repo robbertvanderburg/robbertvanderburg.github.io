@@ -1,0 +1,3 @@
+{% assign paths = '/,/#research,/publications/,/news/,/cv/' | split: ',' %}
+{% assign labels = 'About,Research,Publications,News,CV' | split: ',' %}
+{% for path in paths %}<a href="{{ path | relative_url }}"{% if page.url == path %} aria-current="page"{% endif %}>{{ labels[forloop.index0] }}</a>{% endfor %}

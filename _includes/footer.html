@@ -1,10 +1,13 @@
-<div class="network-footer-wrapper">
-  <canvas id="network-bg" class="network-canvas"></canvas>
-  <div class="network-fade"></div>
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. Built with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> &amp; hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.</p>
-    </div>
-  </footer>
+<footer class="footer">
+<div class="wrap">
+  <div class="footer-top">
+  <div><a class="wordmark" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+  <p>PhD candidate in Mathematics · Vrije Universiteit Amsterdam</p>
+  </div>
+  <nav aria-label="Footer navigation">{% include nav-links.html %}<a href="mailto:{{ site.author.email }}">Contact</a>
+  </nav>
+  </div>
+  <div class="fineprint"><span>© {{ 'now' | date: '%Y' }} {{ site.author.name }}</span><span>Built with <a href="https://jekyllrb.com/">Jekyll</a> · <a href="https://pages.github.com/">GitHub Pages</a></span>
+  </div>
 </div>
-<script src="{{ '/assets/js/network.js' | relative_url }}"></script>
+</footer>

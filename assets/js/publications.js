@@ -1,42 +1,32 @@
-// Search and year filter for the publications list.
-// The list itself is rendered at build time from _data/publications.yml;
-// this script only shows/hides the existing items.
-(function() {
-  const container = document.getElementById('pub-container');
-  const searchInput = document.getElementById('pub-search');
-  const yearFilter = document.getElementById('pub-year-filter');
-  const countDisplay = document.getElementById('pub-count');
-  if (!container) return;
-
-  const items = Array.from(container.querySelectorAll('.pub-item'));
-
-  const emptyMsg = document.createElement('p');
-  emptyMsg.className = 'pub-error';
-  emptyMsg.textContent = 'No matching publications found.';
-  emptyMsg.style.display = 'none';
-  container.appendChild(emptyMsg);
-
-  function filterPubs() {
-    const q = (searchInput?.value || '').trim().toLowerCase();
-    const y = yearFilter?.value || '';
-    let shown = 0;
-
-    items.forEach(item => {
-      const d = item.dataset;
-      const matchQ = !q ||
-        (d.title || '').includes(q) ||
-        (d.authors || '').includes(q) ||
-        (d.venue || '').includes(q);
-      const matchY = !y || d.year === y;
-      const visible = matchQ && matchY;
-      item.style.display = visible ? '' : 'none';
-      if (visible) shown++;
+// Filtering progressively enhances the build-time bibliography.
+(() => {
+  const list = document.querySelector('#pub-container');
+  if (!list) return;
+  const search = document.querySelector('#pub-search');
+  const year = document.querySelector('#pub-year-filter');
+  const empty = document.querySelector('#pub-empty');
+  const count = document.querySelector('#pub-count');
+  const papers = Array.from(list.children);
+  function filter() {
+    const query = search.value.trim().toLowerCase();
+    let matches = 0;
+    papers.forEach(paper => {
+      const data = paper.dataset;
+      const textMatches = [data.title, data.authors, data.venue].some(value => value.includes(query));
+      paper.hidden = !textMatches || (year.value !== '' && year.value !== data.year);
+      if (!paper.hidden) matches++;
     });
-
-    emptyMsg.style.display = shown === 0 ? '' : 'none';
-    if (countDisplay) countDisplay.textContent = `${shown} paper${shown !== 1 ? 's' : ''}`;
+    empty.hidden = matches > 0;
+    count.textContent = matches + (matches === 1 ? ' paper' : ' papers');
   }
-
-  if (searchInput) searchInput.addEventListener('input', filterPubs);
-  if (yearFilter) yearFilter.addEventListener('change', filterPubs);
+  search.addEventListener('input', filter);
+  year.addEventListener('change', filter);
+  document.querySelector('#pub-reset').addEventListener('click', () => {
+    search.value = '';
+    year.value = '';
+    filter();
+    search.focus();
+  });
+  document.querySelector('.filters').hidden = false;
+  filter();
 })();

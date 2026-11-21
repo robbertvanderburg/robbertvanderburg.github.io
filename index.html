@@ -1,145 +1,111 @@
 ---
 layout: default
 title: About
-description: "Academic website of Robbert van der Burg, PhD candidate in Applied Mathematics at VU University Amsterdam. Research in probability theory, network science, Markov chains, and infrastructure reliability."
+description: Robbert van der Burg, PhD candidate in Mathematics at Vrije Universiteit Amsterdam, studies probability, network science and the reliability of critical infrastructure.
 ---
-
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Robbert van der Burg",
-  "url": "https://robbertvanderburg.github.io",
-  "email": "r.vander.burg@vu.nl",
-  "jobTitle": "PhD Candidate",
-  "affiliation": {
-    "@type": "Organization",
-    "name": "VU University Amsterdam",
-    "department": "Department of Mathematics",
-    "url": "https://vu.nl"
-  },
-  "knowsAbout": [
-    "Probability Theory",
-    "Network Science",
-    "Markov Chains",
-    "Stochastic Processes",
-    "Applied Statistics",
-    "Random Walks",
-    "Infrastructure Reliability",
-    "Opinion Dynamics"
-  ],
-  "sameAs": [
-    "https://orcid.org/0009-0007-4945-6120",
-    "https://github.com/robbertvanderburg",
-    "https://linkedin.com/in/robbert-van-der-burg/"
-  ]
-}
+{"@context":"https://schema.org","@type":"Person","name":{{ site.author.name | jsonify }},"url":{{ site.url | jsonify }},"image":{{ '/assets/images/robbert-portrait.webp' | absolute_url | jsonify }},"email":{{ site.author.email | jsonify }},"jobTitle":"PhD candidate in Mathematics","affiliation":{"@type":"Organization","name":"Vrije Universiteit Amsterdam","department":{"@type":"Organization","name":"Department of Mathematics"}},"knowsAbout":["Probability theory","Network science","Applied statistics","Markov chains","Stochastic processes","Random walks","Infrastructure reliability","Opinion dynamics"],"sameAs":[{{ site.author.university_profile | jsonify }},"https://orcid.org/{{ site.author.orcid }}","https://github.com/{{ site.author.github }}","https://linkedin.com/in/{{ site.author.linkedin }}","https://scholar.google.com/citations?user={{ site.author.google_scholar }}"]}
 </script>
-
-<section class="profile-section fade-in">
-  <div class="profile-info">
-    <h1>{{ site.author.name }}</h1>
-    <p class="position">{{ site.author.position }}</p>
-    <p class="affiliation">{{ site.author.affiliation }}</p>
-
-    <p class="profile-bio">
-      I am a PhD candidate in the Department of Mathematics at the Vrije Universiteit Amsterdam. My research lies at the intersection of <strong>probability theory</strong>, <strong>network science</strong>, and <strong>applied statistics</strong>, under the supervision of <a href="https://alessandrozocca.github.io/">Alessandro Zocca</a> and <a href="https://fmeulen.github.io/">Frank van der Meulen</a>.
-    </p>
-    <p class="provile-bio">
-      My PhD research focuses on probabilistic modeling of weather-driven failures in critical infrastructure networks, such as power grids, as part of the VIDI "Power Network Optimization in the Age of Climate Extremes" (<a href="https://doi.org/10.61686/GOOEL09973">https://doi.org/10.61686/GOOEL09973</a>). These networks are inherently spatially distributed, and when subjected to extreme environmental stressors, such as wind storms, floods, or heatwaves, failures rarely occur in isolation. Instead, extreme weather manifests as a spatial field with a characteristic footprint, simultaneously affecting multiple components of the network. As a result, the vulnerability of nodes is strongly shaped by spatial dependence and correlation structures.
-    </p>
-    <p class="profile-bio">
-      In addition to my main PhD topic, I maintain a strong interest in Markov chain theory and network analysis. Related side projects include the study of hitting times on graph models, first passage times, and the Kemeny constant, as well as applications of these concepts in social network analysis. I frequently work with Bernd Heidergott and Thao Le on projects spanning random walks on networks, opinion dynamics, and infrastructure reliability.
-    </p>
-
-    <div class="contact-links">
-      {% if site.author.email %}
-      <a href="mailto:{{ site.author.email }}" class="contact-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
-        Email
-      </a>
-      {% endif %}
-      {% if site.author.google_scholar != "" %}
-      <a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}" class="contact-pill" target="_blank">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/></svg>
-        Scholar
-      </a>
-      {% endif %}
-      {% if site.author.github != "" %}
-      <a href="https://github.com/{{ site.author.github }}" class="contact-pill" target="_blank">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.28-1.23 3.28-1.23.66 1.66.26 2.88.12 3.18.78.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.42.36.82 1.1.82 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-        GitHub
-      </a>
-      {% endif %}
-      {% if site.author.orcid != "" %}
-      <a href="https://orcid.org/{{ site.author.orcid }}" class="contact-pill" target="_blank">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM8.14 4.89c.56 0 .97.41.97.93s-.42.93-.97.93c-.56 0-.97-.42-.97-.93s.42-.93.97-.93zm-.72 3.17h1.44v10.06H7.42V8.06zm3.97 0h3.9c3.72 0 5.6 2.47 5.6 5.03s-1.88 5.03-5.6 5.03h-3.9V8.06zm1.44 1.27v7.49h2.38c2.89 0 4.24-1.78 4.24-3.75s-1.35-3.74-4.24-3.74h-2.38z"/></svg>
-        ORCID
-      </a>
-      {% endif %}
-      {% if site.author.linkedin != "" %}
-      <a href="https://linkedin.com/in/{{ site.author.linkedin }}" class="contact-pill" target="_blank">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-        LinkedIn
-      </a>
-      {% endif %}
-    </div>
+<section class="hero" aria-labelledby="name">
+  <div class="intro">
+  <p class="meta institutional">Vrije Universiteit Amsterdam</p>
+  <h1 id="name">Robbert<br><em>van der Burg</em>
+  </h1>
+  <p class="role">PhD candidate in Mathematics</p>
+  <p class="intro-copy">I study how extreme weather affects power grids, using probability theory, network science and applied statistics to understand failures across a network.</p>
+  <div class="actions"><a class="button" href="#research"><span class="action-verb">Explore&nbsp;</span>research</a><a class="button secondary" href="{{ '/publications/' | relative_url }}"><span class="action-verb">View&nbsp;</span>publications</a><a href="mailto:{{ site.author.email }}">Contact</a>
   </div>
-
-  <div class="profile-photo-wrapper">
-    <img src="{{ '/assets/images/profile_studio_lighting.jpg' | relative_url }}" alt="Photo of {{ site.author.name }}" class="profile-photo" title="'Het lijkt wel een staatsportret!', Guido 2026.">
   </div>
+  <figure class="portrait">
+  <div class="photo-frame"><img src="{{ '/assets/images/robbert-portrait.webp' | relative_url }}" width="760" height="1035" alt="Robbert van der Burg" fetchpriority="high">
+  </div>
+  <figcaption><span>Department of Mathematics</span><span>Amsterdam, NL</span>
+  </figcaption>
+  </figure>
 </section>
-
-<!-- <div class="section-header fade-in">
-  <h2>Research Interests</h2>
+{% assign preprints = site.data.publications | where_exp: 'entry', "entry.venue contains 'preprint'" %}
+{% assign lead = preprints.first %}
+{% if lead %}{% assign p = lead %}
+<section class="featured" aria-labelledby="lead-title">
+<div class="feature-copy">
+<p class="meta">Latest preprint <span> / </span> {{ p.year }}</p>
+<h2 id="lead-title"><a href="{{ p.url | escape }}">{{ p.title | escape }}</a>
+</h2>
+<p class="authors">{{ p.authors | escape }}</p>{% include paper-links.html %}</div>
+<div class="network-art" aria-hidden="true">
 </div>
-
-<div class="interests-grid fade-in">
-  <div class="interest-tag">Markov Chains</div>
-  <div class="interest-tag">Stochastic Processes</div>
-  <div class="interest-tag">Network Science</div>
-  <div class="interest-tag">Random Walks</div>
-  <div class="interest-tag">Opinion Dynamics</div>
-  <div class="interest-tag">Quasi-Stationary Distributions</div>
-  <div class="interest-tag">Infrastructure Reliability</div>
-  <div class="interest-tag">Applied Statistics</div>
-</div> -->
-
-<div class="fade-in" style="margin-top: 2.5rem;">
-  <div class="section-header">
-    <h2>Research Interests</h2>
-  </div>
-
-  <div class="cv-card-grid">
-    <div class="cv-card">
-      <h4>Random Walks on Networks</h4>
-      <p>Non-standard random walks with edge weights, optimization problems, and connections to Kemeny constants. Collaborators: Thao Le, Alessandro Zocca, Bernd Heidergott and Ines Lindner.</p>
-    </div>
-    <div class="cv-card">
-      <h4>Infrastructure Failure Modeling</h4>
-      <p>Comparing probabilistic models (Ising, Bayesian hierarchical, independent Bernoulli, autologistic regression) for analyzing cascading failures in infrastructure networks.</p>
-    </div>
-    <div class="cv-card">
-      <h4>Opinion Dynamics &amp; QSD Theory</h4>
-      <p>Connecting quasi-stationary distribution theory to opinion dynamics models (DeGroot, Friedkin-Johnsen), extending BSc thesis work on metastable behavior.</p>
-    </div>
-  </div>
+</section>
+{% endif %}
+<section class="section split" id="research" tabindex="-1">
+<div>
+<p class="meta section-label">01 / Current research</p>
+<h2>Modeling uncertainty in complex networks.</h2>
 </div>
-
-<div class="section-header fade-in">
-  <h2>Latest News</h2>
+<div class="prose">
+<p>How likely is it that several parts of a power grid fail during the same storm? Wind, floods and heatwaves affect whole regions, exposing nearby components to similar stresses.</p>
+<p>I develop probabilistic models that account for this spatial dependence. I compare Ising models, Bayesian hierarchical models, autologistic regression and independent failure models to study how these assumptions change estimates of network reliability.</p>
+<p>This work is part of the Vidi project <a href="https://doi.org/10.61686/GOOEL09973">Power Network Optimization in the Age of Climate Extremes</a>. My supervisors are <a href="https://alessandrozocca.github.io/">Alessandro Zocca</a> and <a href="https://fmeulen.github.io/">Frank van der Meulen</a>.</p>
 </div>
-
-<div class="news-section fade-in">
-  {% for item in site.data.news limit:3 %}
-  <div class="news-item">
-    <span class="news-date">{{ item.date | date: "%b %Y" }}</span>
-    <p class="news-text">{{ item.text }}</p>
-  </div>
-  {% endfor %}
+</section>
+<section class="section split">
+<div>
+<p class="meta section-label">02 / Research areas</p>
+<h2>Random walks, reliability &amp; opinion dynamics</h2>
 </div>
-
-<div class="fade-in" style="margin-top: 1rem; text-align: right;">
-  <a href="{{ '/news/' | relative_url }}" class="see-more-link">See more &rarr;</a>
+<ol class="directions">
+<li>
+<h3>Random walks &amp; Markov chains</h3>
+<p>With Thao Le, Bernd Heidergott, Ines Lindner and Alessandro Zocca, I study how edge weights change hitting times, Kemeny constants and network optimization.</p><a href="https://arxiv.org/abs/2603.26414">Read the traversal costs preprint</a>
+</li>
+<li>
+<h3>Critical infrastructure reliability</h3>
+<p>I study how to distinguish dependence that comes from the network itself from correlations driven by shared weather conditions.</p><a href="{{ '/NetSci_Presentation_fin.pdf' | relative_url }}">NetSci presentation (PDF)</a>
+</li>
+<li>
+<h3>Opinion dynamics &amp; stochastic systems</h3>
+<p>I explore connections between quasi-stationary distributions and models of opinion formation, including the DeGroot and Friedkin–Johnsen models. This grew out of my undergraduate work on metastability.</p><a href="{{ '/cv/#education' | relative_url }}">Thesis background</a>
+</li>
+</ol>
+</section>
+{% assign other_papers = site.data.publications | where_exp: 'entry', 'entry.title != lead.title' %}
+{% if other_papers.size > 0 %}<section class="section">
+<p class="meta section-label">03 / Selected publications</p>
+<div class="heading-row">
+<h2>Research &amp; publications</h2><a href="{{ '/publications/' | relative_url }}">View all publications</a>
 </div>
+<ul class="pub-list">{% for p in other_papers limit:3 %}{% include paper.html %}{% endfor %}</ul>
+</section>{% endif %}
+<section class="section split">
+<div>
+<p class="meta section-label">04 / Background</p>
+<h2>Education &amp; teaching</h2><a href="{{ '/cv/' | relative_url }}">View academic CV</a>
+</div>
+<div class="background">
+<div><span class="meta">2025 – present</span>
+<h3>PhD candidate in Mathematics</h3>
+<p>Vrije Universiteit Amsterdam</p>
+</div>
+<div><span class="meta">2025</span>
+<h3>MSc, Econometrics and Operations Research</h3>
+<p>Vrije Universiteit Amsterdam</p>
+</div>
+<div><span class="meta">2024</span>
+<h3>BSc, Mathematics</h3>
+<p>Leiden University</p>
+</div>
+<p>I have worked as a teaching assistant at both universities. <a href="{{ '/cv/#teaching' | relative_url }}">Teaching experience</a>
+</p>
+</div>
+</section>
+<section class="section">
+<p class="meta section-label">05 / Recent activity</p>
+<div class="heading-row">
+<h2>News &amp; talks</h2><a href="{{ '/news/' | relative_url }}">All updates</a>
+</div>
+{% assign activity = site.data.news | sort: 'date' | reverse %}{% for item in activity limit:3 %}{% include activity.html compact=true %}{% endfor %}</section>
+<section class="contact split" id="contact">
+<h2>Research, questions<br>&amp; collaboration.</h2>
+<div><a class="email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+<div class="profiles">{% if site.author.university_profile and site.author.university_profile != '' %}<a href="{{ site.author.university_profile }}">VU profile</a>{% endif %}{% if site.author.google_scholar and site.author.google_scholar != '' %}<a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}">Google Scholar</a>{% endif %}{% if site.author.orcid and site.author.orcid != '' %}<a href="https://orcid.org/{{ site.author.orcid }}">ORCID</a>{% endif %}{% if site.author.github and site.author.github != '' %}<a href="https://github.com/{{ site.author.github }}">GitHub</a>{% endif %}{% if site.author.linkedin and site.author.linkedin != '' %}<a href="https://linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>{% endif %}</div>
+</div>
+</section>

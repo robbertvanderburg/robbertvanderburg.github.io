@@ -1,39 +1,19 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}" data-theme="light">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function(){
-      var t = localStorage.getItem('theme') ||
-              (window.matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', t);
-      document.documentElement.style.background = t === 'dark' ? '#141416' : '#FAFAF7';
-    })();
-  </script>
-  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
-  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/images/favicon.png' | relative_url }}">
-  <link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="preload" href="{{ '/assets/fonts/source-serif-4-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-
+  <a class="skip" href="#main">Skip to content</a>
   {% include nav.html %}
-
-  <main class="page-content">
-    <div class="container">
-      {{ content }}
-    </div>
-  </main>
-
+  <main id="main" tabindex="-1" class="wrap">{{ content }}</main>
   {% include footer.html %}
-
-  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
-  {% if page.url == '/publications/' or page.url == '/publications' %}
-  <script src="{{ '/assets/js/publications.js' | relative_url }}"></script>
-  {% endif %}
-
+  {% if page.url == '/publications/' %}<script defer src="{{ '/assets/js/publications.js' | relative_url }}"></script>{% endif %}
 </body>
 </html>

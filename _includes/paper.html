@@ -1,0 +1,6 @@
+<li class="pub-item" data-year="{{ p.year }}" data-title="{{ p.title | downcase | escape }}" data-authors="{{ p.authors | downcase | escape }}" data-venue="{{ p.venue | downcase | escape }}">
+  <span class="meta year">{{ p.year | default: 'Undated' }}</span>
+  <div>
+  <h3>{% if p.url and p.url != '' %}<a href="{{ p.url | escape }}">{{ p.title | escape }}</a>{% else %}{{ p.title | escape }}{% endif %}</h3>
+  <p class="authors">{{ p.authors | escape }}</p><span class="venue">{{ p.venue | escape }}</span>{% include paper-links.html %}</div>
+</li>

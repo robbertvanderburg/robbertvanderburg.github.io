@@ -8,10 +8,10 @@ Personal academic website of Robbert van der Burg, PhD candidate in the Departme
 
 | Page         | Source              | Content                                                     |
 | ------------ | ------------------- | ----------------------------------------------------------- |
-| About        | `index.html`        | Profile card, research interests, three latest news items   |
+| About        | `index.html`        | Academic profile, newest preprint, research and recent news   |
 | News         | `news.html`         | Full list of news items from `_data/news.yml`               |
 | Publications | `publications.html` | Paper list rendered from `_data/publications.yml`           |
-| CV           | `cv.html`           | Education timeline, research, skills, teaching              |
+| CV           | `cv.html`           | Education, research, teaching and talks              |
 
 ## File overview
 
@@ -26,7 +26,7 @@ Personal academic website of Robbert van der Burg, PhD candidate in the Departme
 │
 ├── _includes/
 │   ├── nav.html                 # Top navigation bar with dark/light mode toggle
-│   └── footer.html              # Page footer (also loads the network background)
+│   └── footer.html              # Academic footer and secondary navigation
 │
 ├── _data/
 │   ├── news.yml                 # News items, newest first (shown on About and News)
@@ -38,9 +38,8 @@ Personal academic website of Robbert van der Burg, PhD candidate in the Departme
 │   ├── js/
 │   │   ├── theme.js             # Dark/light toggle (remembers the choice, follows the
 │   │   │                          system preference by default)
-│   │   ├── network.js           # Animated network graph drawn on the header canvas
 │   │   └── publications.js      # Search and year filter on the Publications page
-│   └── images/                  # Profile photo and favicons
+│   └── images/                  # Portrait, favicon and static network illustration
 │
 ├── scripts/
 │   └── fetch_publications.py    # Pulls papers from Semantic Scholar → _data/publications.yml
@@ -65,7 +64,11 @@ Add an entry at the **top** of `_data/news.yml`:
 
 ```yaml
 - date: 2026-04-01
-  text: "<b>Headline:</b> Your update here. HTML such as <a href='...'>links</a> and <em>emphasis</em> works."
+  category: Seminar
+  title: Talk title
+  text: "Summary of the talk."
+  venue: Seminar name
+  slides: /My_Talk.pdf
 ```
 
 - Wrap `text` in double quotes and use single quotes inside the HTML.
@@ -74,11 +77,7 @@ Add an entry at the **top** of `_data/news.yml`:
 
 ### Talk slides and other files
 
-Put the PDF in the repository root and link to it from a news item:
-
-```html
-Slides <a href='My_Talk.pdf' download='My_Talk_Robbert'>here</a>.
-```
+Put the PDF in the repository root and set the entry’s `slides` field to its root-relative path. An entry with slides also appears under talks in the CV.
 
 ### Publications
 
@@ -101,13 +100,13 @@ Publications update **automatically**. Every day at 04:17 UTC, the GitHub Action
 ### Bio, research interests, CV
 
 - **Bio and research interests:** edit `index.html`.
-- **CV:** edit `cv.html` and copy the pattern of the existing timeline entries and cards.
+- **CV:** edit `cv.html` and copy the pattern of the existing education and teaching entries.
 - **Profile photo:** add the image to `assets/images/` and update the `<img>` `src` in `index.html`.
 - **Contact and social links:** edit the `author` fields in `_config.yml`. Links with an empty value are hidden.
 
 ### Styling
 
-All colours are CSS custom properties at the top of `assets/css/style.scss`, with a light and a dark set. The background network in `assets/js/network.js` reads the current theme and has its own colour values in `getColors()`.
+All colours are CSS custom properties at the top of `assets/css/style.scss`, with a light and a dark set. The newest preprint uses a static network illustration in `assets/images/network-study.svg`.
 
 ## Local development
 

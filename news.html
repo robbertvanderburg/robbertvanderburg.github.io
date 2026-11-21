@@ -2,20 +2,16 @@
 layout: default
 title: News
 permalink: /news/
-description: "News and updates from Robbert van der Burg — presentations, preprints, and milestones."
+description: Research news, seminars, conference presentations and doctoral milestones from Robbert van der Burg.
 ---
-
-<div class="fade-in">
-  <div class="section-header">
-    <h2>News</h2>
-  </div>
-
-  <div class="news-section">
-    {% for item in site.data.news %}
-    <div class="news-item">
-      <span class="news-date">{{ item.date | date: "%b %Y" }}</span>
-      <p class="news-text">{{ item.text }}</p>
-    </div>
-    {% endfor %}
-  </div>
-</div>
+<header class="page-intro">
+<h1>News &amp; talks</h1>
+<p>Preprints, presentations and updates from my research.</p>
+</header>
+{% assign archive = site.data.news | sort: 'date' | reverse %}
+{% for item in archive %}{% assign year = item.date | date: '%Y' %}
+  {% if year != last_year %}{% unless forloop.first %}</section>{% endunless %}<section class="archive-year">
+  <h2>{{ year }}</h2>{% endif %}
+  {% include activity.html %}{% assign last_year = year %}
+  {% if forloop.last %}</section>{% endif %}
+{% endfor %}

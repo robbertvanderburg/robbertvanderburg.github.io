@@ -1,19 +1,36 @@
-# Add news items here — newest first.
-# Format:
-#   - date: YYYY-MM-DD
-#     text: "Your news text. You can use <a href='...'>links</a> in HTML."
-
+# Editorial archive, newest first. Each entry can link to papers or a local slide deck.
 - date: 2026-10-16
-  text: "<b>New Preprint available!</b> Together with Bernd Heidergott, Thao Le and Alessandro Zocca, we have just finished a new paper titled 'Multiplicative Path Weights in Networks: From Katz Connectivity to Mean First-Passage Times'. The paper provides a comprehensive treatise on connectivity and ranking measures based on multiplicative path weights, useful for applications in signal dispersion, infection spread modeling and financial networks. Preprint <a href='https://doi.org/10.48550/arXiv.2610.21474'>available on arXiv</a>."
+  category: Preprint
+  title: Multiplicative path weights in networks
+  text: "Bernd Heidergott, Thao Le, Alessandro Zocca and I finished a paper on connectivity and ranking measures based on multiplicative path weights. We study their use in signal dispersion, infection spread and financial networks."
+  links:
+    - {label: Read the preprint, url: "https://doi.org/10.48550/arXiv.2610.21474"}
 
 - date: 2026-09-10
-  text: "<b>A&O Seminar Talk:</b> I presented our recent work on <a href='https://doi.org/10.48550/arXiv.2603.26414'>additive path weights in networks</a> and compared it to current work in progress on <a href='https://doi.org/10.48550/arXiv.2610.21474'>multiplicative path weights in networks</a> at the A&O seminar at VU University Amsterdam. Highlights of the talk include various applications of additive and multiplicative path weights in network analysis, including their use in ranking, connectivity, and managing traffic networks. Slides <a href='Slides_AOSem_0910.pdf' download='AO_Seminar_Slides_Robbert'>here</a>."
+  category: Seminar
+  title: "Product or Sum: Two Algebras for Accumulating Weight Along a Path"
+  text: "At the VU A&O Seminar I compared additive and multiplicative path weights, with applications to ranking, connectivity and traffic network management."
+  venue: A&O Seminar, Vrije Universiteit Amsterdam
+  slides: /Slides_AOSem_0910.pdf
+  links:
+    - {label: Additive path weights, url: "https://doi.org/10.48550/arXiv.2603.26414"}
+    - {label: Multiplicative path weights, url: "https://doi.org/10.48550/arXiv.2610.21474"}
 
 - date: 2026-06-24
-  text: "<b>NetSci Presentation!</b> I presented recent joint work with Alessandro Zocca and Frank van der Meulen at the NetSci Summer Symposium 2026. The talk, Bayesian Recovery of Dependence Structures on Networks, explores how empirical Bayesian parameter estimation can be used to distinguish genuine network-driven dependence from correlations induced by external covariates. The project combines covariate-dependent Ising models with spike-and-slab priors to recover dependence structures while quantifying uncertainty in the inferred network. A preprint describing the methodology and results will be available soon. Slides <a href='NetSci_Presentation_fin.pdf' download='NetSci_Robbert'>here</a>."
+  category: Conference talk
+  title: Bayesian Recovery of Dependence Structures on Networks
+  text: "At the Dutch NetSci Summer Symposium I presented joint work with Alessandro Zocca and Frank van der Meulen. We used empirical Bayesian estimation to distinguish network-driven dependence from correlations induced by external covariates. Our approach combines covariate-dependent Ising models with spike-and-slab priors to quantify uncertainty in the inferred network."
+  venue: Dutch NetSci Summer Symposium
+  slides: /NetSci_Presentation_fin.pdf
 
 - date: 2026-03-30
-  text: "<b>New Preprint available!</b> Together with Thao Le, Bernd Heidergott, Ines Lindner and Alessandro Zocca, we have just finished a new paper titled 'Random Walks with Traversal Costs: Variance-Aware Performance Analysis and Network Optimization'. We introduce weighted Markovian graphs, a framework that decouples random walk dynamics from (possibly stochastic) edge traversal costs, and derive closed-form expressions for the mean and variance of weighted first passage times and Kemeny constants. We showcase the framework through two applications to surveillance patrol policies and traffic network optimization under disruptions. Preprint <a href='https://doi.org/10.48550/arXiv.2603.26414'>available on arXiv</a>."
+  category: Preprint
+  title: Random walks with traversal costs
+  text: "Thao Le, Bernd Heidergott, Ines Lindner, Alessandro Zocca and I introduced weighted Markovian graphs to separate random walk dynamics from potentially stochastic edge traversal costs. We derived the mean and variance of weighted first passage times and Kemeny constants, with applications to surveillance patrol policies and traffic networks under disruption."
+  links:
+    - {label: Read the preprint, url: "https://doi.org/10.48550/arXiv.2603.26414"}
 
 - date: 2025-10-01
-  text: "<b>Phd Started!</b> Began PhD in Mathematics at VU University Amsterdam, working on probability theory, network science, and applied statistics."
+  category: Academic milestone
+  title: Beginning my PhD at Vrije Universiteit Amsterdam
+  text: "I joined the Department of Mathematics to work on probability theory, network science and applied statistics."

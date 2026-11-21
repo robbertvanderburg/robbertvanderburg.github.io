@@ -1,7 +1,7 @@
 # Site settings
 title: Robbert van der Burg
 description: >-
-  Academic website of Rob, PhD candidate at VU University Amsterdam.
+  Robbert van der Burg, PhD candidate in Mathematics at Vrije Universiteit Amsterdam.
   Probability theory, network science, and applied statistics.
 baseurl: "" # e.g. "/your-repo-name" if not using custom domain
 url: "https://robbertvanderburg.github.io" # e.g. "https://yourusername.github.io"
@@ -11,7 +11,8 @@ author:
   name: Robbert van der Burg
   email: r.vander.burg@vu.nl
   position: PhD candidate
-  affiliation: VU University Amsterdam
+  affiliation: Vrije Universiteit Amsterdam
+  university_profile: "https://research.vu.nl/en/persons/robbert-van-der-burg/"
   department: Department of Mathematics
   address: De Boelelaan 1111, 1081 HV Amsterdam
   google_scholar: "P0s9gOoAAAAJ" # Your Google Scholar ID (the part after user= in your profile URL)
@@ -59,3 +60,5 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENSE
+  - PRODUCT.md
+  - DESIGN.md

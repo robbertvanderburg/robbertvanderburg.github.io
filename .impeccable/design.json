@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-20T19:19:04.263914+00:00",
+  "title": "Academic website design",
+  "extensions": {
+    "colorMeta": {
+      "wine": {
+        "role": "primary",
+        "displayName": "Academic burgundy"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm paper"
+      },
+      "feature": {
+        "role": "primary",
+        "displayName": "Lead preprint background"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Researcher name",
+        "purpose": "Large roman first name and burgundy italic surname on the homepage."
+      },
+      "title": {
+        "displayName": "Record title",
+        "purpose": "A paper, talk or CV entry title."
+      },
+      "metadata": {
+        "displayName": "Metadata",
+        "purpose": "Section labels, dates and categories."
+      }
+    },
+    "motion": [
+      {
+        "name": "control-state",
+        "value": "150ms ease-out",
+        "purpose": "Color and border transitions on buttons when reduced motion has not been requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-controls",
+        "value": "23rem"
+      },
+      {
+        "name": "single-column-records",
+        "value": "47rem"
+      },
+      {
+        "name": "narrow-gutters",
+        "value": "58rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action in the academic profile.",
+      "html": "<a class=\"ds-action\" href=\"#research\">Explore research</a>",
+      "css": ".ds-action{display:inline-flex;align-items:center;justify-content:center;min-height:2.8rem;padding:.58rem 1.08rem;border:1px solid var(--wine,#7b2d3b);background:var(--wine,#7b2d3b);color:var(--paper,#fafaf7);border-radius:3px;font:600 .91rem/1.65 var(--body,'DM Sans',Arial,sans-serif);text-decoration:none}.ds-action:hover{background:var(--ink,#201f20);border-color:var(--ink,#201f20)}.ds-action:focus-visible{outline:2px solid var(--wine,#7b2d3b);outline-offset:4px}@media(prefers-reduced-motion:no-preference){.ds-action{transition:color 150ms ease-out,background-color 150ms ease-out,border-color 150ms ease-out}}"
+    },
+    {
+      "name": "Publication search",
+      "kind": "input",
+      "refersTo": "filter-field",
+      "description": "A permanently labeled field for filtering preprints and papers.",
+      "html": "<label class=\"ds-search\">Search publications<input type=\"search\" placeholder=\"Title, author or venue\"></label>",
+      "css": ".ds-search{display:block;color:var(--ink,#201f20);font:600 .9rem/1.65 var(--body,'DM Sans',Arial,sans-serif)}.ds-search input{display:block;width:100%;margin-top:.35rem;min-height:2.8rem;padding:.6rem .85rem;background:var(--paper,#fafaf7);color:inherit;border:1px solid var(--strong-line,#87817c);border-radius:2px;font:400 1rem/1.65 var(--body,'DM Sans',Arial,sans-serif)}.ds-search input::placeholder{color:var(--muted,#555452);opacity:1}.ds-search input:focus-visible{outline:2px solid var(--wine,#7b2d3b);outline-offset:4px}"
+    },
+    {
+      "name": "Paper resource",
+      "kind": "custom",
+      "description": "Underlined text for an available paper resource.",
+      "html": "<a class=\"ds-resource\" href=\"https://arxiv.org/abs/2603.26414\">arXiv</a>",
+      "css": ".ds-resource{display:inline-block;padding-block:.15rem;color:var(--wine,#7b2d3b);font:500 .9rem/1.65 var(--body,'DM Sans',Arial,sans-serif);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em}.ds-resource:hover{text-decoration-thickness:2px}.ds-resource:focus-visible{outline:2px solid var(--wine,#7b2d3b);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Journal contributor profile",
+    "overview": "The profile pairs an authentic studio portrait with an editorial nameplate. In the bibliography, CV and archive, fine rules and date columns organize the records.",
+    "keyCharacteristics": [
+      "Local serif, sans-serif and monospaced typefaces",
+      "Burgundy paper feature",
+      "Ruled chronological entries",
+      "Static network motif"
+    ]
+  }
+}
