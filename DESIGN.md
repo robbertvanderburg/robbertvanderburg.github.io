@@ -22,15 +22,15 @@ colors:
   dark-feature: '#542430'
 typography:
   display:
-    fontFamily: "Source Serif 4, Georgia, serif"
-    fontSize: "clamp(3.5rem, 6.6vw, 5.5rem)"
-    fontWeight: 400
-    lineHeight: 0.98
+    fontFamily: "DM Sans, Arial, sans-serif"
+    fontSize: "clamp(4rem, 7.5vw, 6.75rem)"
+    fontWeight: 700
+    lineHeight: 1
     letterSpacing: "-0.04em"
   headline:
-    fontFamily: "Source Serif 4, Georgia, serif"
+    fontFamily: "DM Sans, Arial, sans-serif"
     fontSize: "clamp(2rem, 3.15vw, 2.9rem)"
-    fontWeight: 400
+    fontWeight: 650
     lineHeight: 1.13
     letterSpacing: "-0.035em"
   title:
@@ -48,7 +48,7 @@ typography:
     lineHeight: 1.55
     letterSpacing: "0.045em"
 rounded:
-  button: "3px"
+  button: "3rem"
   field: "2px"
 spacing:
   section: "clamp(2.8rem, 5.6vw, 5rem)"
@@ -75,30 +75,16 @@ The original site at commit `0592a04` paired Source Serif 4, DM Sans and JetBrai
 
 ## Colors
 
-Paper is the reading surface. The secondary surface distinguishes the bibliography filters and footer. Ink carries titles, muted ink carries research prose and authors, and wine identifies links and the italic surname. The featured preprint has its own deep burgundy ground with ivory text. In dark mode links turn rose and the paper turns charcoal.
+Paper, warm secondary surfaces and wine accents carry through the profile, bibliography, archive and CV. Dark mode keeps the charcoal ground and rose links.
 
 ## Typography
 
-Use regular, optically sized Source Serif 4 for headings and paper titles, DM Sans for narrative and controls, and JetBrains Mono for short dates, section labels and captions. The three families are served from local WOFF2 files. Keep author order and paper titles intact through line wrapping. On small screens the homepage name scales between 2.45rem and 3.7rem next to the portrait.
+The name and major headings use a bold DM Sans face. Source Serif 4 carries bibliographic and academic record titles. JetBrains Mono sets dates and paper metadata.
 
 ## Layout
 
-Desktop pages share an 86% column capped at 74rem. Below 58rem the column expands to 90%. Research prose has a 65-character measure. The bibliography and activity archive reserve a left column for dates, with titles, authors or summaries, and source links grouped to the right.
-
-At 47rem the dates move above their entries, section headings move above the prose and the CV contents become an inline list. The hero keeps the name and portrait side by side while its description and actions use the full column. Print styles omit navigation and filters and keep each CV or bibliography entry together where space permits.
-
-## Elevation & Depth
-
-An opaque, sticky masthead sits above the page. Fine rules separate sections and records. The portrait has two burgundy corner marks on its frame. The lead preprint carries a static network illustration alongside its text on wide screens.
-
-## Shapes
-
-Paper sections, the featured preprint and the portrait are rectangular. Form fields and buttons have a slight corner radius. Borders on inputs use the stronger rule color so the outline remains legible in either theme.
+On wide screens the name stretches across a central cutout of the original studio portrait. The introduction and newest preprint flank the photograph. A rounded navigation strip links to the three research areas. On smaller screens the title and role sit beside the portrait, followed by the introduction and paper.
 
 ## Components
 
-- **Masthead.** A small network drawing precedes the researcher’s name. The current navigation item has an underline, and the divided-circle control switches themes. The mobile menu discloses the same links.
-- **Actions.** A solid wine button identifies the primary action. The adjacent outlined button and underlined contact link have progressively less visual weight. Keyboard focus uses a two-pixel outline with a four-pixel offset.
-- **Bibliography.** Each row carries a year, linked serif title, author list, venue or status, and available resources. The search field and year selector use visible labels. An empty result offers a filter reset.
-- **News and CV.** Year, date and category labels anchor chronological records. Rules and whitespace separate entries, keeping slide links next to the talks they document.
-- **Motion.** Buttons change color over 150ms when motion is permitted. The network mark and the featured illustration are static.
+The shared header centers the navigation on wide screens and includes a theme switch and contact action. A solid wine pill marks the primary action. The academic pages share the display hierarchy, labeled controls and ruled records. Paper links identify the abstract, PDF and DOI.

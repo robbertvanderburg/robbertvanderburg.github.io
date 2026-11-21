@@ -20,7 +20,7 @@
     "typographyMeta": {
       "display": {
         "displayName": "Researcher name",
-        "purpose": "Large roman first name and burgundy italic surname on the homepage."
+        "purpose": "Bold sans-serif name across the central studio portrait."
       },
       "title": {
         "displayName": "Record title",
@@ -60,7 +60,7 @@
       "refersTo": "button-primary",
       "description": "Main action in the academic profile.",
       "html": "<a class=\"ds-action\" href=\"#research\">Explore research</a>",
-      "css": ".ds-action{display:inline-flex;align-items:center;justify-content:center;min-height:2.8rem;padding:.58rem 1.08rem;border:1px solid var(--wine,#7b2d3b);background:var(--wine,#7b2d3b);color:var(--paper,#fafaf7);border-radius:3px;font:600 .91rem/1.65 var(--body,'DM Sans',Arial,sans-serif);text-decoration:none}.ds-action:hover{background:var(--ink,#201f20);border-color:var(--ink,#201f20)}.ds-action:focus-visible{outline:2px solid var(--wine,#7b2d3b);outline-offset:4px}@media(prefers-reduced-motion:no-preference){.ds-action{transition:color 150ms ease-out,background-color 150ms ease-out,border-color 150ms ease-out}}"
+      "css": ".ds-action{display:inline-flex;align-items:center;justify-content:center;min-height:2.8rem;padding:.58rem 1.08rem;border:1px solid var(--wine,#7b2d3b);background:var(--wine,#7b2d3b);color:var(--paper,#fafaf7);border-radius:3rem;font:600 .91rem/1.65 var(--body,'DM Sans',Arial,sans-serif);text-decoration:none}.ds-action:hover{background:var(--ink,#201f20);border-color:var(--ink,#201f20)}.ds-action:focus-visible{outline:2px solid var(--wine,#7b2d3b);outline-offset:4px}@media(prefers-reduced-motion:no-preference){.ds-action{transition:color 150ms ease-out,background-color 150ms ease-out,border-color 150ms ease-out}}"
     },
     {
       "name": "Publication search",

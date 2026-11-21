@@ -6,36 +6,35 @@ description: Robbert van der Burg, PhD candidate in Mathematics at Vrije Univers
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":{{ site.author.name | jsonify }},"url":{{ site.url | jsonify }},"image":{{ '/assets/images/robbert-portrait.webp' | absolute_url | jsonify }},"email":{{ site.author.email | jsonify }},"jobTitle":"PhD candidate in Mathematics","affiliation":{"@type":"Organization","name":"Vrije Universiteit Amsterdam","department":{"@type":"Organization","name":"Department of Mathematics"}},"knowsAbout":["Probability theory","Network science","Applied statistics","Markov chains","Stochastic processes","Random walks","Infrastructure reliability","Opinion dynamics"],"sameAs":[{{ site.author.university_profile | jsonify }},"https://orcid.org/{{ site.author.orcid }}","https://github.com/{{ site.author.github }}","https://linkedin.com/in/{{ site.author.linkedin }}","https://scholar.google.com/citations?user={{ site.author.google_scholar }}"]}
 </script>
-<section class="hero" aria-labelledby="name">
-  <div class="intro">
-  <p class="meta institutional">Vrije Universiteit Amsterdam</p>
-  <h1 id="name">Robbert<br><em>van der Burg</em>
-  </h1>
-  <p class="role">PhD candidate in Mathematics</p>
-  <p class="intro-copy">I study how extreme weather affects power grids, using probability theory, network science and applied statistics to understand failures across a network.</p>
-  <div class="actions"><a class="button" href="#research"><span class="action-verb">Explore&nbsp;</span>research</a><a class="button secondary" href="{{ '/publications/' | relative_url }}"><span class="action-verb">View&nbsp;</span>publications</a><a href="mailto:{{ site.author.email }}">Contact</a>
-  </div>
-  </div>
-  <figure class="portrait">
-  <div class="photo-frame"><img src="{{ '/assets/images/robbert-portrait.webp' | relative_url }}" width="760" height="1035" alt="Robbert van der Burg" fetchpriority="high">
-  </div>
-  <figcaption><span>Department of Mathematics</span><span>Amsterdam, NL</span>
-  </figcaption>
-  </figure>
-</section>
 {% assign preprints = site.data.publications | where_exp: 'entry', "entry.venue contains 'preprint'" %}
 {% assign lead = preprints.first %}
-{% if lead %}{% assign p = lead %}
-<section class="featured" aria-labelledby="lead-title">
-<div class="feature-copy">
-<p class="meta">Latest preprint <span> / </span> {{ p.year }}</p>
-<h2 id="lead-title"><a href="{{ p.url | escape }}">{{ p.title | escape }}</a>
-</h2>
-<p class="authors">{{ p.authors | escape }}</p>{% include paper-links.html %}</div>
-<div class="network-art" aria-hidden="true">
-</div>
+<section class="profile-stage" aria-labelledby="name">
+  <div class="profile-spread">
+    <p class="institutional">Vrije Universiteit Amsterdam</p>
+    <h1 id="name"><span>Robbert</span> <span>van der Burg</span></h1>
+    <img class="profile-cutout" src="{{ '/assets/images/robbert-cutout.webp' | relative_url }}"
+         width="760" height="1035" alt="Robbert van der Burg" fetchpriority="high">
+    <div class="profile-intro">
+      <p class="role">PhD candidate in Mathematics</p>
+      <p class="intro-copy">I study how extreme weather affects power grids, using probability theory, network science and applied statistics to understand failures across a network.</p>
+      <a class="button" href="#research">Explore research</a>
+    </div>
+    {% if lead %}{% assign p = lead %}
+      <section class="preprint-note" aria-labelledby="lead-title">
+        <p class="note-meta"><span>Latest preprint</span><span>{{ p.year }}</span></p>
+        <h2 id="lead-title"><a href="{{ p.url | escape }}">{{ p.title | escape }}</a></h2>
+        <p class="authors">{{ p.authors | escape }}</p>
+        {% include paper-links.html %}
+      </section>
+    {% endif %}
+  </div>
+  <nav class="research-strip" aria-label="Research areas">
+    <strong>Research areas</strong>
+    <a href="#random-walks">Random walks</a>
+    <a href="#infrastructure">Infrastructure reliability</a>
+    <a href="#opinion-dynamics">Opinion dynamics</a>
+  </nav>
 </section>
-{% endif %}
 <section class="section split" id="research" tabindex="-1">
 <div>
 <p class="meta section-label">01 / Current research</p>
@@ -53,15 +52,15 @@ description: Robbert van der Burg, PhD candidate in Mathematics at Vrije Univers
 <h2>Random walks, reliability &amp; opinion dynamics</h2>
 </div>
 <ol class="directions">
-<li>
+<li id="random-walks">
 <h3>Random walks &amp; Markov chains</h3>
 <p>With Thao Le, Bernd Heidergott, Ines Lindner and Alessandro Zocca, I study how edge weights change hitting times, Kemeny constants and network optimization.</p><a href="https://arxiv.org/abs/2603.26414">Read the traversal costs preprint</a>
 </li>
-<li>
+<li id="infrastructure">
 <h3>Critical infrastructure reliability</h3>
 <p>I study how to distinguish dependence that comes from the network itself from correlations driven by shared weather conditions.</p><a href="{{ '/NetSci_Presentation_fin.pdf' | relative_url }}">NetSci presentation (PDF)</a>
 </li>
-<li>
+<li id="opinion-dynamics">
 <h3>Opinion dynamics &amp; stochastic systems</h3>
 <p>I explore connections between quasi-stationary distributions and models of opinion formation, including the DeGroot and Friedkin–Johnsen models. This grew out of my undergraduate work on metastability.</p><a href="{{ '/cv/#education' | relative_url }}">Thesis background</a>
 </li>
