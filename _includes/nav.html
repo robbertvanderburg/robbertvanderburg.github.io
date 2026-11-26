@@ -1,9 +1,28 @@
-<header class="masthead"><div class="wrap mast-inner">
-  <a class="wordmark" href="{{ '/' | relative_url }}">{% include mark.html %}<span>{{ site.author.name }}</span></a>
-  <button type="button" class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" hidden>Menu</button>
-  <button type="button" class="theme-toggle" aria-label="Dark theme" aria-pressed="false" hidden><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><path fill="currentColor" stroke="none" d="M12 4a8 8 0 0 1 0 16Z"/></svg></button>
-  <nav id="primary-nav" aria-label="Main navigation">
-    {% include nav-links.html %}
-    <a class="button header-contact" href="{{ '/#contact' | relative_url }}">Contact</a>
+<header class="masthead">
+  <nav id="primary-nav" class="wrap mast-inner" aria-label="Main navigation">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="{{ site.author.name | escape }} — Home"{% if page.url == '/' %} aria-current="page"{% endif %}>
+      {% include mark.html %}<span class="brand-full">{{ site.author.name }}</span><span class="brand-short" aria-hidden="true">{{ site.author.name | split: ' ' | first }}</span>
+    </a>
+    <a class="nav-direct" href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} aria-current="page"{% endif %}>Publications</a>
+    <a class="nav-direct" href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} aria-current="page"{% endif %}>CV</a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="more-navigation">
+      Menu
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+        <path class="menu-lines" d="M2 4h12M2 8h12M2 12h12"/><path class="menu-cross" d="m3 3 10 10M13 3 3 13"/>
+      </svg>
+    </button>
+    <div class="nav-more" id="more-navigation">
+      <a href="{{ '/#research' | relative_url }}">Research</a>
+      <a href="{{ '/news/' | relative_url }}"{% if page.url == '/news/' %} aria-current="page"{% endif %}>News</a>
+      <a class="header-contact" href="{{ '/#contact' | relative_url }}">Contact</a>
+      <button type="button" class="theme-toggle" aria-label="Dark theme" aria-pressed="false" hidden>
+        <span class="theme-label">Dark theme</span>
+        <span class="theme-switch" aria-hidden="true"></span>
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path class="moon" d="M20.5 14a8.7 8.7 0 0 1-10.6-10.6A8.8 8.8 0 1 0 20.5 14Z"/>
+          <g class="sun"><circle cx="12" cy="12" r="3.8"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></g>
+        </svg>
+      </button>
+    </div>
   </nav>
-</div></header>
+</header>

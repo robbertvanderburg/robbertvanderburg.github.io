@@ -11,13 +11,15 @@ description: Robbert van der Burg, PhD candidate in Mathematics at Vrije Univers
 <section class="profile-stage" aria-labelledby="name">
   <div class="profile-spread">
     <div class="profile-identity">
-      <h1 id="name">Robbert van&nbsp;der&nbsp;Burg</h1>
+      <h1 id="name">Robbert <span>van der Burg</span></h1>
       <p class="role">PhD candidate in <span>Mathematics</span></p>
       <p class="institutional">{{ site.author.affiliation }}</p>
     </div>
     <div class="profile-portrait">
       <div class="profile-matte">
         <img class="profile-cutout" src="{{ '/assets/images/robbert-cutout-ai.webp' | relative_url }}"
+             srcset="{{ '/assets/images/robbert-cutout-small.webp' | relative_url }} 320w, {{ '/assets/images/robbert-cutout-ai.webp' | relative_url }} 760w"
+             sizes="(max-width: 40em) min(25vw, 9rem), (max-width: 68em) 27vw, 19rem"
              width="760" height="1035" alt="Robbert van der Burg" fetchpriority="high">
       </div>
     </div>
@@ -58,8 +60,8 @@ description: Robbert van der Burg, PhD candidate in Mathematics at Vrije Univers
     </div>
     <figure class="research-figure">
       <img src="{{ '/assets/images/network-study.svg' | relative_url }}" width="400" height="216"
-           alt="Linked nodes crossed by contours marking shared weather exposure" loading="lazy">
-      <figcaption>A network exposed to the same weather system</figcaption>
+           alt="Weather contours cross several connected nodes in a network" loading="lazy">
+      <figcaption>Dashed contours mark the region exposed to the same weather system.</figcaption>
     </figure>
   </div>
   <ul class="directions">

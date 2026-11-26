@@ -12,16 +12,15 @@ description: Papers and preprints by Robbert van der Burg on networks, random wa
 {% if pubs.size > 0 %}
 <section class="bibliography" aria-label="Bibliography">
   <div class="bibliography-toolbar">
-    <p class="meta" id="pub-count" role="status">{{ pubs.size }} paper{% if pubs.size != 1 %}s{% endif %}</p>
     <div class="filters" hidden>
       <label class="search-field">
-        <span class="sr-only">Search papers</span>
-        <input id="pub-search" type="search" placeholder="Search papers">
+        <span>Search papers</span>
+        <input id="pub-search" type="search" placeholder="Title, author or year">
       </label>
       {% assign years = pubs | map: 'year' | compact | uniq | sort | reverse %}
       {% assign undated = pubs | where_exp: 'entry', 'entry.year == nil' %}
       <label{% if years.size < 2 and undated.size == 0 or years.size == 0 %} hidden{% endif %}>
-        <span class="sr-only">Publication year</span>
+        <span>Publication year</span>
         <select id="pub-year-filter">
           <option value="">All years</option>
           {% for year in years %}<option value="{{ year }}">{{ year }}</option>{% endfor %}
@@ -29,6 +28,7 @@ description: Papers and preprints by Robbert van der Burg on networks, random wa
         </select>
       </label>
     </div>
+    <p class="meta" id="pub-count" role="status">{{ pubs.size }} paper{% if pubs.size != 1 %}s{% endif %}</p>
   </div>
   <ul class="pub-list" id="pub-container">{% for p in pubs %}{% include paper.html heading='h2' %}{% endfor %}</ul>
   <div id="pub-empty" hidden>

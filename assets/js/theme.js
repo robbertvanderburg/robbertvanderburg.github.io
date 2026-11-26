@@ -7,7 +7,11 @@
   function applyTheme() {
     const dark = preference === 'dark' || (preference !== 'light' && system.matches);
     root.dataset.theme = dark ? 'dark' : 'light';
-    document.querySelector('.theme-toggle')?.setAttribute('aria-pressed', String(dark));
+    const toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      toggle.setAttribute('aria-pressed', String(dark));
+      toggle.title = dark ? 'Switch to light theme' : 'Switch to dark theme';
+    }
   }
   applyTheme();
   system.addEventListener('change', applyTheme);
@@ -27,45 +31,62 @@
       applyTheme();
     });
 
-    const menu = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('#primary-nav');
-    const narrow = window.matchMedia('(max-width: 54rem)');
-    function showMenu(open) {
-      menu.setAttribute('aria-expanded', String(open));
-      nav.hidden = narrow.matches && !open;
+    const header = document.querySelector('.masthead');
+    const menu = header.querySelector('.menu-toggle');
+    const panel = document.getElementById('more-navigation');
+    header.classList.add('nav-ready');
+    function closeMenu() {
+      if (menu.getAttribute('aria-expanded') === 'true') menu.setAttribute('aria-expanded', 'false');
     }
-    function resize() {
-      menu.hidden = !narrow.matches;
-      showMenu(false);
-    }
-    resize();
-    narrow.addEventListener('change', resize);
-    menu.addEventListener('click', () => showMenu(nav.hidden));
-    document.addEventListener('keydown', event => {
+    menu.addEventListener('click', () => {
+      menu.setAttribute('aria-expanded', String(menu.getAttribute('aria-expanded') !== 'true'));
+    });
+    header.addEventListener('keydown', event => {
       if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
-        showMenu(false);
+        closeMenu();
         menu.focus();
       }
     });
-    const header = document.querySelector('.masthead');
-    // Zoom and text enlargement can wrap the navigation onto more than one line.
-    if ('ResizeObserver' in window) {
-      new ResizeObserver(() => {
-        root.style.setProperty('--mast-height', header.offsetHeight + 'px');
-      }).observe(header);
-    }
-    document.addEventListener('focusin', event => {
-      if (!header.contains(event.target)) showMenu(false);
-    });
     document.addEventListener('click', event => {
-      if (!header.contains(event.target)) showMenu(false);
+      if (!header.contains(event.target)) closeMenu();
     });
-    nav.addEventListener('click', event => {
+    document.addEventListener('focusin', event => {
+      if (!header.contains(event.target)) closeMenu();
+    });
+    header.addEventListener('click', event => {
       const link = event.target.closest('a');
-      if (link && narrow.matches) {
-        showMenu(false);
-        if (link.hash && link.pathname === location.pathname) document.getElementById(link.hash.slice(1))?.focus();
-      }
+      if (!link || menu.getAttribute('aria-expanded') !== 'true') return;
+      closeMenu();
+      if (link.hash && link.pathname === location.pathname) document.getElementById(link.hash.slice(1))?.focus();
     });
+    let compact = menu.offsetWidth > 0;
+    function measureHeader() {
+      const nextCompact = menu.offsetWidth > 0;
+      if (compact !== nextCompact) {
+        compact = nextCompact;
+        if (compact && panel.contains(document.activeElement)) menu.focus();
+        closeMenu();
+      }
+      const height = header.offsetHeight;
+      root.style.setProperty('--mast-height', height + 'px');
+      root.classList.toggle('sticky-header', !compact && height <= window.innerHeight / 4);
+    }
+    measureHeader();
+    window.addEventListener('resize', measureHeader);
+    if ('ResizeObserver' in window) new ResizeObserver(() => requestAnimationFrame(measureHeader)).observe(header);
+
+    function markLocation() {
+      document.querySelectorAll('.masthead, .footer nav').forEach(group => {
+        const links = Array.from(group.querySelectorAll('a')).filter(link => link.pathname === location.pathname);
+        const section = links.find(link => link.hash && link.hash === location.hash);
+        links.forEach(link => {
+          if (link === section) link.setAttribute('aria-current', 'location');
+          else if (!section && !link.hash) link.setAttribute('aria-current', 'page');
+          else link.removeAttribute('aria-current');
+        });
+      });
+    }
+    markLocation();
+    window.addEventListener('hashchange', markLocation);
   });
 })();

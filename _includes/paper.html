@@ -1,5 +1,6 @@
 {% assign paper_heading = include.heading | default: 'h3' %}
-<li class="pub-item" data-year="{{ p.year | default: 'undated' }}" data-search="{{ p.title | append: ' ' | append: p.authors | append: ' ' | append: p.venue | downcase | escape }}">
+{% assign paper_year = p.year | default: 'undated' %}
+<li class="pub-item" data-year="{{ paper_year }}" data-search="{{ p.title | append: ' ' | append: p.authors | append: ' ' | append: p.venue | append: ' ' | append: paper_year | downcase | escape }}">
   <div class="paper-metadata">
     <span class="meta year">{{ p.year | default: 'Undated' }}</span>
     {% if p.venue and p.venue != '' %}<span class="venue">{{ p.venue | escape }}</span>{% endif %}
