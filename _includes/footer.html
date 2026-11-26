@@ -1,13 +1,22 @@
 <footer class="footer">
-<div class="wrap">
-  <div class="footer-top">
-  <div><a class="wordmark" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
-  <p>{{ site.author.department }}, {{ site.author.affiliation }}</p>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-identity">
+        <a class="wordmark" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+        <p>{{ site.author.department }}<br>{{ site.author.affiliation }}</p>
+        <a class="footer-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      </div>
+      <nav aria-label="Footer navigation">
+        <div role="group" aria-labelledby="footer-work">
+          <p class="footer-heading" id="footer-work">Academic work</p>
+          {% include nav-links.html paths='/#research,/publications/,/cv/' labels='Research,Publications,Academic CV' %}
+        </div>
+        <div role="group" aria-labelledby="footer-profile">
+          <p class="footer-heading" id="footer-profile">Profile</p>
+          {% include nav-links.html paths='/,/news/,/#contact' labels='Home,News &amp; talks,Contact' %}
+        </div>
+      </nav>
+    </div>
+    <p class="fineprint">© {{ 'now' | date: '%Y' }} {{ site.author.name }}</p>
   </div>
-  <nav aria-label="Footer navigation">{% include nav-links.html %}<a href="{{ '/#contact' | relative_url }}">Contact</a>
-  </nav>
-  </div>
-  <div class="fineprint"><span>© {{ 'now' | date: '%Y' }} {{ site.author.name }}</span><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-  </div>
-</div>
 </footer>
