@@ -1,0 +1,131 @@
+{
+  "applicationRevision": "a1aca89",
+  "renderedCssSha256": "4bb0881676e790cf253ec923e5542d83908a330b9208019613694d08d8fa43f6",
+  "downloadedCvBytes": 137945,
+  "environment": {
+    "OS": "macOS 26.6.2",
+    "playwright": "1.65.1",
+    "axeCore": "4.14.0",
+    "chromiumChannel": "chrome"
+  },
+  "run": {
+    "startedAt": "2026-11-26T21:54:31.370Z",
+    "durationMilliseconds": 32984,
+    "passed": 54,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0
+  },
+  "coverage": {
+    "engines": 3,
+    "routes": 4,
+    "themes": 2,
+    "nominalViewports": 15,
+    "routeViewportThemeCombinations": 360,
+    "additionalWidthsPerRoute": 38,
+    "enlargedTextPercent": 200,
+    "enlargedTextWidths": [
+      320,
+      640
+    ],
+    "axeWidths": [
+      320,
+      820,
+      1440
+    ],
+    "axeTags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "axeInteractiveStates": [
+      "open mobile menu",
+      "zero matching publications",
+      "open citation disclosure"
+    ],
+    "axeScans": 81,
+    "axeViolations": 0,
+    "casesPerEngine": [
+      "home at all 15 viewports in light",
+      "home at all 15 viewports in dark",
+      "publications at all 15 viewports in light",
+      "publications at all 15 viewports in dark",
+      "cv at all 15 viewports in light",
+      "cv at all 15 viewports in dark",
+      "news at all 15 viewports in light",
+      "news at all 15 viewports in dark",
+      "container-query transitions, split view and 200% default text",
+      "menu keyboard, dismissal, rotation and stored theme",
+      "search, filtering, resetting and disclosure controls",
+      "CV index, anchored sections and printer view",
+      "internal links, downloads and anchored destinations",
+      "without JavaScript all pages, research and papers remain accessible",
+      "year and search combine on a multi-year fixture with an undated record",
+      "citation disclosure, clipboard success and manual fallback",
+      "primary publication and email links, portraits and reduced motion",
+      "phone and tablet touch input opens menus, toggles themes and expands abstracts"
+    ]
+  },
+  "engines": {
+    "chromium": {
+      "version": "158.0.8127.38",
+      "passed": 18,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "routeViewportThemeCombinations": 120,
+      "additionalWidthChecks": 152,
+      "enlargedTextChecks": 8,
+      "accessibilityScans": {
+        "matrix": 24,
+        "interactive": 3
+      },
+      "violations": 0,
+      "observedPageOrConsoleErrors": 0
+    },
+    "firefox": {
+      "version": "159.0",
+      "passed": 18,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "routeViewportThemeCombinations": 120,
+      "additionalWidthChecks": 152,
+      "enlargedTextChecks": 8,
+      "accessibilityScans": {
+        "matrix": 24,
+        "interactive": 3
+      },
+      "violations": 0,
+      "observedPageOrConsoleErrors": 0
+    },
+    "webkit": {
+      "version": "27.2",
+      "passed": 18,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "routeViewportThemeCombinations": 120,
+      "additionalWidthChecks": 152,
+      "enlargedTextChecks": 8,
+      "accessibilityScans": {
+        "matrix": 24,
+        "interactive": 3
+      },
+      "violations": 0,
+      "observedPageOrConsoleErrors": 0
+    }
+  },
+  "visualRegression": {
+    "browser": "Chrome 158.0.8127.38",
+    "encoder": "cwebp 1.6.0",
+    "scale": 1,
+    "motion": "reduce",
+    "format": "WebP, quality 89",
+    "beforeFullPageImages": 120,
+    "afterFullPageImages": 120,
+    "matchedFinalImagesOnIndependentComparison": 120
+  }
+}

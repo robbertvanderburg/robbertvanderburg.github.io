@@ -1,0 +1,349 @@
+{
+  "baseline": [
+    {
+      "url": "https://alessandrozocca.github.io/",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://alessandrozocca.github.io/",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.26414",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2603.26414",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.21474",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2610.21474",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.20985",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2611.20985",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/pdf/2603.26414",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/pdf/2603.26414",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/pdf/2610.21474",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/pdf/2610.21474",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/pdf/2611.20985",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/pdf/2611.20985",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2603.26414",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2603.26414",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2610.21474",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2610.21474",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2611.20985",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2611.20985",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.61686/GOOEL09973",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://www.nwo.nl/projecten/gooel09973",
+      "error": ""
+    },
+    {
+      "url": "https://fmeulen.github.io/",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://fmeulen.github.io/",
+      "error": ""
+    },
+    {
+      "url": "https://github.com/robbertvanderburg",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://github.com/robbertvanderburg",
+      "error": ""
+    },
+    {
+      "url": "https://linkedin.com/in/robbert-van-der-burg/",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://linkedin.com/in/robbert-van-der-burg/",
+      "error": ""
+    },
+    {
+      "url": "https://orcid.org/0009-0007-4945-6120",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://orcid.org/0009-0007-4945-6120",
+      "error": ""
+    },
+    {
+      "url": "https://research.vu.nl/en/persons/robbert-van-der-burg/",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://research.vu.nl/en/persons/robbert-van-der-burg/",
+      "error": ""
+    },
+    {
+      "url": "https://scholar.google.com/citations?user=P0s9gOoAAAAJ",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://scholar.google.com/citations?user=P0s9gOoAAAAJ",
+      "error": ""
+    },
+    {
+      "url": "https://studiegids.universiteitleiden.nl/courses/111407/seminarium-presenteren-en-communiceren",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://studiegids.universiteitleiden.nl/courses/111407/seminarium-presenteren-en-communiceren",
+      "error": ""
+    },
+    {
+      "url": "https://studiegids.vu.nl/en/courses/2025-2026/XM_0051",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://studiegids.vu.nl/en/courses/2025-2026/XM_0051",
+      "error": ""
+    },
+    {
+      "url": "https://studiegids.vu.nl/en/courses/2025-2026/XM_0140",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://studiegids.vu.nl/en/courses/2025-2026/XM_0140",
+      "error": ""
+    },
+    {
+      "url": "https://studiegids.vu.nl/en/courses/2025-2026/X_400213",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://studiegids.vu.nl/en/courses/2025-2026/X_400213",
+      "error": ""
+    },
+    {
+      "url": "https://studiegids.vu.nl/en/courses/2025-2026/X_405105",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://studiegids.vu.nl/en/courses/2025-2026/X_405105",
+      "error": ""
+    },
+    {
+      "url": "https://www.semanticscholar.org/author/2491518526",
+      "status": "202",
+      "method": "HEAD",
+      "finalURL": "https://www.semanticscholar.org/author/2491518526",
+      "error": ""
+    }
+  ],
+  "revised": [
+    {
+      "url": "https://alessandrozocca.github.io/",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://alessandrozocca.github.io/",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.26414",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2603.26414",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.21474",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2610.21474",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.20985",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2611.20985",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/bibtex/2603.26414",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/bibtex/2603.26414",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/bibtex/2610.21474",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/bibtex/2610.21474",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/bibtex/2611.20985",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/bibtex/2611.20985",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/pdf/2603.26414",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/pdf/2603.26414",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/pdf/2610.21474",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/pdf/2610.21474",
+      "error": ""
+    },
+    {
+      "url": "https://arxiv.org/pdf/2611.20985",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/pdf/2611.20985",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2603.26414",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2603.26414",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2610.21474",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2610.21474",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.2611.20985",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://arxiv.org/abs/2611.20985",
+      "error": ""
+    },
+    {
+      "url": "https://doi.org/10.61686/GOOEL09973",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://www.nwo.nl/projecten/gooel09973",
+      "error": ""
+    },
+    {
+      "url": "https://fmeulen.github.io/",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://fmeulen.github.io/",
+      "error": ""
+    },
+    {
+      "url": "https://github.com/robbertvanderburg",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://github.com/robbertvanderburg",
+      "error": ""
+    },
+    {
+      "url": "https://linkedin.com/in/robbert-van-der-burg/",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://linkedin.com/in/robbert-van-der-burg/",
+      "error": ""
+    },
+    {
+      "url": "https://orcid.org/0009-0007-4945-6120",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://orcid.org/0009-0007-4945-6120",
+      "error": ""
+    },
+    {
+      "url": "https://research.vu.nl/en/persons/robbert-van-der-burg/",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://research.vu.nl/en/persons/robbert-van-der-burg/",
+      "error": ""
+    },
+    {
+      "url": "https://scholar.google.com/citations?user=P0s9gOoAAAAJ",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://scholar.google.com/citations?user=P0s9gOoAAAAJ",
+      "error": ""
+    },
+    {
+      "url": "https://studiegids.universiteitleiden.nl/courses/111407/seminarium-presenteren-en-communiceren",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://studiegids.universiteitleiden.nl/courses/111407/seminarium-presenteren-en-communiceren",
+      "error": ""
+    },
+    {
+      "url": "https://studiegids.vu.nl/en/courses/2025-2026/XM_0051",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://studiegids.vu.nl/en/courses/2025-2026/XM_0051",
+      "error": ""
+    },
+    {
+      "url": "https://studiegids.vu.nl/en/courses/2025-2026/XM_0140",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://studiegids.vu.nl/en/courses/2025-2026/XM_0140",
+      "error": ""
+    },
+    {
+      "url": "https://studiegids.vu.nl/en/courses/2025-2026/X_400213",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://studiegids.vu.nl/en/courses/2025-2026/X_400213",
+      "error": ""
+    },
+    {
+      "url": "https://studiegids.vu.nl/en/courses/2025-2026/X_405105",
+      "status": "200",
+      "method": "HEAD",
+      "finalURL": "https://studiegids.vu.nl/en/courses/2025-2026/X_405105",
+      "error": ""
+    },
+    {
+      "url": "https://www.semanticscholar.org/author/2491518526",
+      "status": "202",
+      "method": "HEAD",
+      "finalURL": "https://www.semanticscholar.org/author/2491518526",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,3606 @@
+{
+  "before": [
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 5593,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 55,
+      "preprintTop": 590,
+      "figureLeft": 16,
+      "figureWidth": 288,
+      "portraitRingWidth": 74
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 5121,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 55,
+      "preprintTop": 506,
+      "figureLeft": 16,
+      "figureWidth": 343,
+      "portraitRingWidth": 86
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 5061,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 56,
+      "preprintTop": 510,
+      "figureLeft": 16,
+      "figureWidth": 358,
+      "portraitRingWidth": 90
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 4986,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 62,
+      "preprintTop": 521,
+      "figureLeft": 17,
+      "figureWidth": 396,
+      "portraitRingWidth": 98
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 3680,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38,
+      "preprintTop": 505,
+      "figureLeft": 480,
+      "figureWidth": 331,
+      "portraitRingWidth": 196
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 4104,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38,
+      "preprintTop": 503,
+      "figureLeft": 31,
+      "figureWidth": 544,
+      "portraitRingWidth": 178
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 4048,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38,
+      "preprintTop": 504,
+      "figureLeft": 33,
+      "figureWidth": 544,
+      "portraitRingWidth": 191
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 3675,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 45,
+      "preprintTop": 526,
+      "figureLeft": 582,
+      "figureWidth": 401,
+      "portraitRingWidth": 238
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 3675,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 45,
+      "preprintTop": 526,
+      "figureLeft": 582,
+      "figureWidth": 401,
+      "portraitRingWidth": 238
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 3830,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 52,
+      "preprintTop": 549,
+      "figureLeft": 670,
+      "figureWidth": 462,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 4037,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 60,
+      "preprintTop": 585,
+      "figureLeft": 770,
+      "figureWidth": 499,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 3928,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 56,
+      "preprintTop": 567,
+      "figureLeft": 727,
+      "figureWidth": 502,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 4111,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63,
+      "preprintTop": 596,
+      "figureLeft": 806,
+      "figureWidth": 496,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 4208,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 142,
+      "preprintTop": 679,
+      "figureLeft": 1046,
+      "figureWidth": 496,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 4208,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 142,
+      "preprintTop": 679,
+      "figureLeft": 1366,
+      "figureWidth": 496,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 5593,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 55,
+      "preprintTop": 590,
+      "figureLeft": 16,
+      "figureWidth": 288,
+      "portraitRingWidth": 74
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 5121,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 55,
+      "preprintTop": 506,
+      "figureLeft": 16,
+      "figureWidth": 343,
+      "portraitRingWidth": 86
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 5061,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 56,
+      "preprintTop": 510,
+      "figureLeft": 16,
+      "figureWidth": 358,
+      "portraitRingWidth": 90
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 4986,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 62,
+      "preprintTop": 521,
+      "figureLeft": 17,
+      "figureWidth": 396,
+      "portraitRingWidth": 98
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 3680,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38,
+      "preprintTop": 505,
+      "figureLeft": 480,
+      "figureWidth": 331,
+      "portraitRingWidth": 196
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 4104,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38,
+      "preprintTop": 503,
+      "figureLeft": 31,
+      "figureWidth": 544,
+      "portraitRingWidth": 178
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 4048,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38,
+      "preprintTop": 504,
+      "figureLeft": 33,
+      "figureWidth": 544,
+      "portraitRingWidth": 191
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 3675,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 45,
+      "preprintTop": 526,
+      "figureLeft": 582,
+      "figureWidth": 401,
+      "portraitRingWidth": 238
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 3675,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 45,
+      "preprintTop": 526,
+      "figureLeft": 582,
+      "figureWidth": 401,
+      "portraitRingWidth": 238
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 3830,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 52,
+      "preprintTop": 549,
+      "figureLeft": 670,
+      "figureWidth": 462,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 4037,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 60,
+      "preprintTop": 585,
+      "figureLeft": 770,
+      "figureWidth": 499,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 3928,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 56,
+      "preprintTop": 567,
+      "figureLeft": 727,
+      "figureWidth": 502,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 4111,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63,
+      "preprintTop": 596,
+      "figureLeft": 806,
+      "figureWidth": 496,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 4208,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 142,
+      "preprintTop": 679,
+      "figureLeft": 1046,
+      "figureWidth": 496,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 4208,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 142,
+      "preprintTop": 679,
+      "figureLeft": 1366,
+      "figureWidth": 496,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 1700,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 1600,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 1556,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 1556,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 1240,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 1217,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 1233,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 40
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1366,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1240,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 1310,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 1370,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 1344,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 1379,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 1379,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 1440,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 1700,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 1600,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 1556,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 1556,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 1240,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 1217,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 1233,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 40
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1366,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1240,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 1310,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 1370,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 1344,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 1379,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 1379,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 1440,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 3255,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 3011,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 2941,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 2914,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 2338,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 2346,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 2332,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 40
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 2234,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 2234,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 2237,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 2339,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 2273,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 2359,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 2365,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 2365,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 3255,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 3011,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 2941,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 2914,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 2338,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 2346,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 2332,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 40
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 2234,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 2234,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 2237,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 2339,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 2273,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 2359,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 2365,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 2365,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 2682,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 2417,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 2346,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 2293,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 1751,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 1838,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 1771,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 40
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1715,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1715,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 1757,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 1818,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 1795,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 1833,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 1837,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 1837,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 2682,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 2417,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 2346,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 2293,
+      "headerHeight": 58,
+      "fullWordmark": false,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 1751,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 1838,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 1771,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 40
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1715,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1715,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 1757,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 1818,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 1795,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 1833,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 1837,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 1837,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    }
+  ],
+  "after": [
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 5619,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 60,
+      "preprintTop": 474,
+      "figureLeft": 16,
+      "figureWidth": 288,
+      "portraitRingWidth": 76
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 5183,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 60,
+      "preprintTop": 449,
+      "figureLeft": 16,
+      "figureWidth": 343,
+      "portraitRingWidth": 86
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 5120,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 61,
+      "preprintTop": 432,
+      "figureLeft": 16,
+      "figureWidth": 358,
+      "portraitRingWidth": 89
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 5002,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 68,
+      "preprintTop": 400,
+      "figureLeft": 17,
+      "figureWidth": 396,
+      "portraitRingWidth": 99
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 3547,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41,
+      "preprintTop": 396,
+      "figureLeft": 500,
+      "figureWidth": 311,
+      "portraitRingWidth": 197
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 3988,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38,
+      "preprintTop": 376,
+      "figureLeft": 128,
+      "figureWidth": 512,
+      "portraitRingWidth": 179
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 3960,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 40,
+      "preprintTop": 379,
+      "figureLeft": 154,
+      "figureWidth": 512,
+      "portraitRingWidth": 191
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 3628,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50,
+      "preprintTop": 438,
+      "figureLeft": 606,
+      "figureWidth": 377,
+      "portraitRingWidth": 239
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 3628,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50,
+      "preprintTop": 438,
+      "figureLeft": 606,
+      "figureWidth": 377,
+      "portraitRingWidth": 239
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 3821,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58,
+      "preprintTop": 490,
+      "figureLeft": 699,
+      "figureWidth": 434,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 4008,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 62,
+      "preprintTop": 497,
+      "figureLeft": 800,
+      "figureWidth": 468,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 3922,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 62,
+      "preprintTop": 497,
+      "figureLeft": 758,
+      "figureWidth": 471,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 4071,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 62,
+      "preprintTop": 496,
+      "figureLeft": 836,
+      "figureWidth": 466,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 4084,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 62,
+      "preprintTop": 496,
+      "figureLeft": 1076,
+      "figureWidth": 466,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "light",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 4084,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 62,
+      "preprintTop": 496,
+      "figureLeft": 1396,
+      "figureWidth": 466,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 5619,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 60,
+      "preprintTop": 474,
+      "figureLeft": 16,
+      "figureWidth": 288,
+      "portraitRingWidth": 76
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 5183,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 60,
+      "preprintTop": 449,
+      "figureLeft": 16,
+      "figureWidth": 343,
+      "portraitRingWidth": 86
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 5120,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 61,
+      "preprintTop": 432,
+      "figureLeft": 16,
+      "figureWidth": 358,
+      "portraitRingWidth": 89
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 5002,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 68,
+      "preprintTop": 400,
+      "figureLeft": 17,
+      "figureWidth": 396,
+      "portraitRingWidth": 99
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 3547,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41,
+      "preprintTop": 396,
+      "figureLeft": 500,
+      "figureWidth": 311,
+      "portraitRingWidth": 197
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 3988,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38,
+      "preprintTop": 376,
+      "figureLeft": 128,
+      "figureWidth": 512,
+      "portraitRingWidth": 179
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 3960,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 40,
+      "preprintTop": 379,
+      "figureLeft": 154,
+      "figureWidth": 512,
+      "portraitRingWidth": 191
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 3628,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50,
+      "preprintTop": 438,
+      "figureLeft": 606,
+      "figureWidth": 377,
+      "portraitRingWidth": 239
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 3628,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50,
+      "preprintTop": 438,
+      "figureLeft": 606,
+      "figureWidth": 377,
+      "portraitRingWidth": 239
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 3821,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58,
+      "preprintTop": 490,
+      "figureLeft": 699,
+      "figureWidth": 434,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 4008,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 62,
+      "preprintTop": 497,
+      "figureLeft": 800,
+      "figureWidth": 468,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 3922,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 62,
+      "preprintTop": 497,
+      "figureLeft": 758,
+      "figureWidth": 471,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 4071,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 62,
+      "preprintTop": 496,
+      "figureLeft": 836,
+      "figureWidth": 466,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 4084,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 62,
+      "preprintTop": 496,
+      "figureLeft": 1076,
+      "figureWidth": 466,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "home",
+      "theme": "dark",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 4084,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 62,
+      "preprintTop": 496,
+      "figureLeft": 1396,
+      "figureWidth": 466,
+      "portraitRingWidth": 268
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 1921,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 1689,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 1663,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 1663,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 1236,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 1197,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 1213,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 40
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1366,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1302,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 1382,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 1451,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 1422,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 1460,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 1460,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "publications",
+      "theme": "light",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 1460,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 1921,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 1689,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 1663,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 1663,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 1236,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 1197,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 1213,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 40
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1366,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1302,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 1382,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 1451,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 1422,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 1460,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 1460,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "publications",
+      "theme": "dark",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 1460,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 3296,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 3093,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 3040,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 3013,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 2355,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 2348,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 2334,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 40
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 2353,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 2353,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 2366,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 2465,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 2396,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 2486,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 2492,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "light",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 2492,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 3296,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 3093,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 3040,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 3013,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 2355,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 2348,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 2334,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 40
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 2353,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 2353,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 2366,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 2465,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 2396,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 2486,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 2492,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "cv",
+      "theme": "dark",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 2492,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 2769,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 2504,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 2451,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 2398,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 1746,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 1816,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 1751,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 40
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1751,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1751,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 1801,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 1872,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 1846,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 1887,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 1891,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "light",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 1891,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        320,
+        568
+      ],
+      "documentWidth": 320,
+      "documentHeight": 2769,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        375,
+        667
+      ],
+      "documentWidth": 375,
+      "documentHeight": 2504,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 390,
+      "documentHeight": 2451,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        430,
+        932
+      ],
+      "documentWidth": 430,
+      "documentHeight": 2398,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        844,
+        390
+      ],
+      "documentWidth": 844,
+      "documentHeight": 1746,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 41
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        768,
+        1024
+      ],
+      "documentWidth": 768,
+      "documentHeight": 1816,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 38
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        820,
+        1180
+      ],
+      "documentWidth": 820,
+      "documentHeight": 1751,
+      "headerHeight": 58,
+      "fullWordmark": true,
+      "menu": true,
+      "headingHeight": 40
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        1366
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1751,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1024,
+        768
+      ],
+      "documentWidth": 1024,
+      "documentHeight": 1751,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 50
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1180,
+        820
+      ],
+      "documentWidth": 1180,
+      "documentHeight": 1801,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 58
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1366,
+        1024
+      ],
+      "documentWidth": 1366,
+      "documentHeight": 1872,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 67
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1280,
+        800
+      ],
+      "documentWidth": 1280,
+      "documentHeight": 1846,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 63
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1440,
+        900
+      ],
+      "documentWidth": 1440,
+      "documentHeight": 1887,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "documentWidth": 1920,
+      "documentHeight": 1891,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    },
+    {
+      "page": "news",
+      "theme": "dark",
+      "viewport": [
+        2560,
+        1440
+      ],
+      "documentWidth": 2560,
+      "documentHeight": 1891,
+      "headerHeight": 72,
+      "fullWordmark": true,
+      "menu": false,
+      "headingHeight": 71
+    }
+  ]
+}
