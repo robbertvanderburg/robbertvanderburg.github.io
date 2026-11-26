@@ -63,3 +63,13 @@ exclude:
   - PRODUCT.md
   - DESIGN.md
   - DEPLOYMENT.md
+  - docs/ux-audit
+  - tests
+  - node_modules
+  - package.json
+  - package-lock.json
+  - test-results
+  - playwright-report
+  - playwright.config.cjs
+  - scripts/export-cv.cjs
+  - scripts/cv-export.json

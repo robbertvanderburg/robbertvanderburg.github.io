@@ -1,0 +1,14 @@
+{
+  "name": "robbert-academic-site-qa",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "audit:capture": "node tests/capture.cjs",
+    "cv:pdf": "node scripts/export-cv.cjs",
+    "audit:compare": "node tests/capture.cjs after --verify"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "axe-core": "4.14.0"
+  }
+}

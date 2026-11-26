@@ -10,3 +10,6 @@ _site/
 # output files
 *.png
 Gemfile.lock
+node_modules/
+test-results/
+playwright-report/
