@@ -1,6 +1,12 @@
-<li class="pub-item" data-year="{{ p.year }}" data-title="{{ p.title | downcase | escape }}" data-authors="{{ p.authors | downcase | escape }}" data-venue="{{ p.venue | downcase | escape }}">
-  <span class="meta year">{{ p.year | default: 'Undated' }}</span>
-  <div>
-  <h3>{% if p.url and p.url != '' %}<a href="{{ p.url | escape }}">{{ p.title | escape }}</a>{% else %}{{ p.title | escape }}{% endif %}</h3>
-  <p class="authors">{{ p.authors | escape }}</p><span class="venue">{{ p.venue | escape }}</span>{% include paper-links.html %}</div>
+{% assign paper_heading = include.heading | default: 'h3' %}
+<li class="pub-item" data-year="{{ p.year | default: 'undated' }}" data-search="{{ p.title | append: ' ' | append: p.authors | append: ' ' | append: p.venue | downcase | escape }}">
+  <div class="paper-metadata">
+    <span class="meta year">{{ p.year | default: 'Undated' }}</span>
+    {% if p.venue and p.venue != '' %}<span class="venue">{{ p.venue | escape }}</span>{% endif %}
+  </div>
+  <div class="paper-body">
+    <{{ paper_heading }} class="paper-title">{% if p.url and p.url != '' %}<a href="{{ p.url | escape }}">{{ p.title | escape }}</a>{% else %}{{ p.title | escape }}{% endif %}</{{ paper_heading }}>
+    <p class="authors">{{ p.authors | escape }}</p>
+    {% include paper-links.html primary_url=p.url %}
+  </div>
 </li>

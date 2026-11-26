@@ -5,13 +5,16 @@ permalink: /news/
 description: Research news, seminars, conference presentations and doctoral milestones from Robbert van der Burg.
 ---
 <header class="page-intro">
-<h1>News &amp; talks</h1>
-<p>Preprints, presentations and updates from my research.</p>
+  <h1>News &amp; talks</h1>
+  <p>Preprint announcements, seminar notes and slides from my research.</p>
 </header>
 {% assign archive = site.data.news | sort: 'date' | reverse %}
-{% for item in archive %}{% assign year = item.date | date: '%Y' %}
-  {% if year != last_year %}{% unless forloop.first %}</section>{% endunless %}<section class="archive-year">
-  <h2>{{ year }}</h2>{% endif %}
-  {% include activity.html %}{% assign last_year = year %}
-  {% if forloop.last %}</section>{% endif %}
+{% assign years = archive | group_by_exp: 'entry', "entry.date | date: '%Y'" %}
+{% for year in years %}
+  <section class="archive-year" aria-labelledby="year-{{ year.name }}">
+    <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
+    <div class="archive-entries">
+      {% for item in year.items %}{% include activity.html short_date=true %}{% endfor %}
+    </div>
+  </section>
 {% endfor %}

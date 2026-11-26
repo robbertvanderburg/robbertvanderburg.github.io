@@ -14,13 +14,13 @@
       },
       "feature": {
         "role": "primary",
-        "displayName": "Lead preprint background"
+        "displayName": "Wine page surround"
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Researcher name",
-        "purpose": "Bold sans-serif name across the central studio portrait."
+        "displayName": "Page heading",
+        "purpose": "Bold sans-serif heading for the researcher and the three collections."
       },
       "title": {
         "displayName": "Record title",
@@ -28,7 +28,7 @@
       },
       "metadata": {
         "displayName": "Metadata",
-        "purpose": "Section labels, dates and categories."
+        "purpose": "Dates, publication years and result counts."
       }
     },
     "motion": [
@@ -40,12 +40,12 @@
     ],
     "breakpoints": [
       {
-        "name": "compact-controls",
-        "value": "23rem"
-      },
-      {
         "name": "single-column-records",
         "value": "47rem"
+      },
+      {
+        "name": "disclosure-navigation",
+        "value": "54rem"
       },
       {
         "name": "narrow-gutters",
@@ -60,15 +60,15 @@
       "refersTo": "button-primary",
       "description": "Main action in the academic profile.",
       "html": "<a class=\"ds-action\" href=\"#research\">Explore research</a>",
-      "css": ".ds-action{display:inline-flex;align-items:center;justify-content:center;min-height:2.8rem;padding:.58rem 1.08rem;border:1px solid var(--wine,#7b2d3b);background:var(--wine,#7b2d3b);color:var(--paper,#fafaf7);border-radius:3rem;font:600 .91rem/1.65 var(--body,'DM Sans',Arial,sans-serif);text-decoration:none}.ds-action:hover{background:var(--ink,#201f20);border-color:var(--ink,#201f20)}.ds-action:focus-visible{outline:2px solid var(--wine,#7b2d3b);outline-offset:4px}@media(prefers-reduced-motion:no-preference){.ds-action{transition:color 150ms ease-out,background-color 150ms ease-out,border-color 150ms ease-out}}"
+      "css": ".ds-action{display:inline-flex;align-items:center;justify-content:center;min-height:2.8rem;padding:.6rem 1.35rem;border:1px solid var(--wine,#7b2d3b);background:var(--wine,#7b2d3b);color:var(--paper,#fafaf7);border-radius:3rem;font:600 .94rem/1.4 var(--body,'DM Sans',Arial,sans-serif);text-decoration:none}.ds-action:hover{background:var(--ink,#201f20);border-color:var(--ink,#201f20)}.ds-action:focus-visible{outline:2px solid var(--wine,#7b2d3b);outline-offset:4px}@media(prefers-reduced-motion:no-preference){.ds-action{transition:color 150ms ease-out,background-color 150ms ease-out,border-color 150ms ease-out}}"
     },
     {
       "name": "Publication search",
       "kind": "input",
       "refersTo": "filter-field",
-      "description": "A permanently labeled field for filtering preprints and papers.",
-      "html": "<label class=\"ds-search\">Search publications<input type=\"search\" placeholder=\"Title, author or venue\"></label>",
-      "css": ".ds-search{display:block;color:var(--ink,#201f20);font:600 .9rem/1.65 var(--body,'DM Sans',Arial,sans-serif)}.ds-search input{display:block;width:100%;margin-top:.35rem;min-height:2.8rem;padding:.6rem .85rem;background:var(--paper,#fafaf7);color:inherit;border:1px solid var(--strong-line,#87817c);border-radius:2px;font:400 1rem/1.65 var(--body,'DM Sans',Arial,sans-serif)}.ds-search input::placeholder{color:var(--muted,#555452);opacity:1}.ds-search input:focus-visible{outline:2px solid var(--wine,#7b2d3b);outline-offset:4px}"
+      "description": "A compact search field for filtering preprints and papers.",
+      "html": "<input class=\"ds-search\" type=\"search\" aria-label=\"Search papers\" placeholder=\"Search papers\">",
+      "css": ".ds-search{display:block;width:100%;min-height:2.75rem;padding:.55rem .65rem;background:var(--paper,#fafaf7);color:var(--ink,#201f20);border:1px solid var(--strong-line,#87817c);border-radius:.45rem;font:400 1rem/1.65 var(--body,'DM Sans',Arial,sans-serif)}.ds-search::placeholder{color:var(--muted,#555452);opacity:1}.ds-search:focus-visible{outline:2px solid var(--wine,#7b2d3b);outline-offset:4px}"
     },
     {
       "name": "Paper resource",
@@ -80,10 +80,10 @@
   ],
   "narrative": {
     "northStar": "Journal contributor profile",
-    "overview": "The profile pairs an authentic studio portrait with an editorial nameplate. In the bibliography, CV and archive, fine rules and date columns organize the records.",
+    "overview": "A rounded paper panel connects the portrait, bibliography, news archive and CV. Fine rules and date columns organize the records.",
     "keyCharacteristics": [
       "Local serif, sans-serif and monospaced typefaces",
-      "Burgundy paper feature",
+      "Wine-red page surround",
       "Ruled chronological entries",
       "Static network motif"
     ]

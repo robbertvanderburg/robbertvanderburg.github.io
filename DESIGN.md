@@ -23,9 +23,9 @@ colors:
 typography:
   display:
     fontFamily: "DM Sans, Arial, sans-serif"
-    fontSize: "clamp(4rem, 7.5vw, 6.75rem)"
+    fontSize: "clamp(2.35rem, 4.8vw, 4.35rem)"
     fontWeight: 700
-    lineHeight: 1
+    lineHeight: 1.02
     letterSpacing: "-0.04em"
   headline:
     fontFamily: "DM Sans, Arial, sans-serif"
@@ -49,7 +49,7 @@ typography:
     letterSpacing: "0.045em"
 rounded:
   button: "3rem"
-  field: "2px"
+  field: "0.45rem"
 spacing:
   section: "clamp(2.8rem, 5.6vw, 5rem)"
 components:
@@ -57,12 +57,12 @@ components:
     backgroundColor: "{colors.wine}"
     textColor: "{colors.paper}"
     rounded: "{rounded.button}"
-    padding: "0.58rem 1.08rem"
+    padding: "0.6rem 1.35rem"
   filter-field:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
     rounded: "{rounded.field}"
-    padding: "0.6rem 0.85rem"
+    padding: "0.55rem 0.65rem"
 ---
 
 # Academic website design
@@ -83,8 +83,10 @@ The name and major headings use a bold DM Sans face. Source Serif 4 carries bibl
 
 ## Layout
 
-On wide screens the name stretches across a central cutout of the original studio portrait. The introduction and newest preprint flank the photograph. A rounded navigation strip links to the three research areas. On smaller screens the title and role sit beside the portrait, followed by the introduction and paper.
+On wide screens all four pages share a rounded paper panel framed by wine red. The home introduction sits beside the studio portrait in a muted circular frame. The newest preprint follows directly below. The research overview pairs the text with a network illustration.
+
+The bibliography gives year and publication status their own column. The news archive pairs a year with its dated entries. The CV keeps an index alongside its sections and provides a print layout. On phones the panel spans the viewport, and the record metadata and content flow in one column.
 
 ## Components
 
-The shared header centers the navigation on wide screens and includes a theme switch and contact action. A solid wine pill marks the primary action. The academic pages share the display hierarchy, labeled controls and ruled records. Paper links identify the abstract, PDF and DOI.
+The shared header includes a theme switch and a contact link at every width. A solid wine pill marks the primary action. The academic pages share the display hierarchy, labeled controls and ruled records. Paper titles link to the source and separate links identify the available PDF, DOI or distinct arXiv abstract.

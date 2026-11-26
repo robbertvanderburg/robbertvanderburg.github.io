@@ -2,4 +2,4 @@
 
 ## Direction contract
 
-The supplied visual reference sets the composition. Use the existing academic color tokens in both themes. On desktop a broad sans-serif name sits behind the genuine central portrait, with the doctoral introduction to the left and the latest YAML-derived preprint to the right. A floating research index links to the three areas below. The mobile layout groups the portrait, name and role before the prose. Keep paper titles, authors, statuses and direct links legible at every size.
+The supplied visual reference sets the composition. On desktop the introduction sits on the left and the studio portrait sits on the right in a muted circular frame. On mobile the name and role sit alongside a smaller portrait. Show the most recent YAML-derived preprint immediately after the introduction. Keep the research overview and three research topics together, followed by papers, news and contact. Use the shared academic palette in both themes.

@@ -5,14 +5,24 @@ permalink: /cv/
 description: Academic CV of Robbert van der Burg, including education, doctoral research, teaching and presentations.
 ---
 <header class="page-intro">
-<h1>Academic CV</h1>
-<p>Robbert van der Burg · Department of Mathematics, Vrije Universiteit Amsterdam</p>
+  <h1>Academic CV</h1>
+  <div>
+    <p><strong>{{ site.author.name }}</strong><br>{{ site.author.department }}, {{ site.author.affiliation }}<br>
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    </p>
+    <button type="button" class="button button-secondary cv-print" data-print hidden>Print CV</button>
+  </div>
 </header>
 <div class="cv-grid">
-<nav class="contents" aria-label="CV sections"><a href="#education">Education</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#talks">Talks &amp; presentations</a>
+<nav class="contents" aria-labelledby="cv-contents">
+  <p class="meta" id="cv-contents">On this page</p>
+  <a href="#education">Education</a>
+  <a href="#research">Research</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#talks">Talks &amp; presentations</a>
 </nav>
 <div>
-<section id="education" class="cv-section">
+<section id="education" class="cv-section" tabindex="-1">
 <h2>Education</h2>
 <article><span class="meta">2025 – present</span>
 <h3>PhD candidate in Mathematics</h3>
@@ -30,14 +40,15 @@ description: Academic CV of Robbert van der Burg, including education, doctoral 
 <p>My thesis, supervised by Floske Spieksma, explored metastable behavior in a Gani SIS epidemic model, quasi-stationary distributions and convergence on two timescales.</p>
 </article>
 </section>
-<section id="research" class="cv-section">
+<section id="research" class="cv-section" tabindex="-1">
 <h2>Research</h2>
 <article><span class="meta">October 2025 – present</span>
 <h3>Weather-driven failures in infrastructure networks</h3>
-<p>My doctoral research with <a href="https://alessandrozocca.github.io/">Alessandro Zocca</a> and <a href="https://fmeulen.github.io/">Frank van der Meulen</a> studies how extreme weather affects interconnected infrastructure. Other projects concern Markov chain methods, edge-weighted random walks, network optimization and opinion dynamics.</p><a href="{{ '/#research' | relative_url }}">Research overview</a>
+<p>My doctoral research with <a href="https://alessandrozocca.github.io/">Alessandro Zocca</a> and <a href="https://fmeulen.github.io/">Frank van der Meulen</a> studies how extreme weather affects interconnected infrastructure. Other projects concern Markov chain methods, edge-weighted random walks, network optimization and opinion dynamics.</p>
+<div class="paper-links"><a href="{{ '/#research' | relative_url }}">Research overview</a><a href="{{ '/publications/' | relative_url }}">Publications</a></div>
 </article>
 </section>
-<section id="teaching" class="cv-section">
+<section id="teaching" class="cv-section" tabindex="-1">
 <h2>Teaching</h2>
 <article><span class="meta">2025 – 2026</span>
 <h3>Teaching assistant, Vrije Universiteit Amsterdam</h3>
@@ -56,11 +67,13 @@ description: Academic CV of Robbert van der Burg, including education, doctoral 
 <h3>Teaching assistant, Leiden University</h3><a href="https://studiegids.universiteitleiden.nl/courses/111407/seminarium-presenteren-en-communiceren">Seminar Presenting and Communicating</a>
 </article>
 </section>
-<section id="talks" class="cv-section">
+<section id="talks" class="cv-section" tabindex="-1">
 <h2>Talks &amp; presentations</h2>
-{% for item in site.data.news %}{% if item.slides %}<article><span class="meta">{{ item.date | date: '%d %B %Y' }}</span>
+{% assign talks = site.data.news | sort: 'date' | reverse %}
+{% for item in talks %}{% if item.slides %}<article><time class="meta" datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%d %B %Y' }}</time>
 <h3>{{ item.title | escape }}</h3>
-<p>{{ item.venue | escape }}</p><a href="{{ item.slides | relative_url }}" download>Download slides (PDF)</a>
+<p>{{ item.venue | escape }}</p>
+<div class="paper-links"><a href="{{ item.slides | relative_url }}" download>Slides (PDF)</a></div>
 </article>{% endif %}{% endfor %}</section>
 </div>
 </div>

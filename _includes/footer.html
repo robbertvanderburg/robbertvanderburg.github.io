@@ -2,12 +2,12 @@
 <div class="wrap">
   <div class="footer-top">
   <div><a class="wordmark" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
-  <p>PhD candidate in Mathematics · Vrije Universiteit Amsterdam</p>
+  <p>{{ site.author.department }}, {{ site.author.affiliation }}</p>
   </div>
   <nav aria-label="Footer navigation">{% include nav-links.html %}<a href="mailto:{{ site.author.email }}">Contact</a>
   </nav>
   </div>
-  <div class="fineprint"><span>© {{ 'now' | date: '%Y' }} {{ site.author.name }}</span><span>Built with <a href="https://jekyllrb.com/">Jekyll</a> · <a href="https://pages.github.com/">GitHub Pages</a></span>
+  <div class="fineprint"><span>© {{ 'now' | date: '%Y' }} {{ site.author.name }}</span><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
   </div>
 </div>
 </footer>

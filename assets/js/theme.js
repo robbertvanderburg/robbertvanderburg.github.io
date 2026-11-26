@@ -12,6 +12,12 @@
   applyTheme();
   system.addEventListener('change', applyTheme);
   document.addEventListener('DOMContentLoaded', () => {
+    const printButton = document.querySelector('[data-print]');
+    if (printButton) {
+      printButton.hidden = false;
+      printButton.addEventListener('click', () => window.print());
+    }
+
     const button = document.querySelector('.theme-toggle');
     button.hidden = false;
     applyTheme();
@@ -23,7 +29,7 @@
 
     const menu = document.querySelector('.menu-toggle');
     const nav = document.querySelector('#primary-nav');
-    const narrow = window.matchMedia('(max-width: 47rem)');
+    const narrow = window.matchMedia('(max-width: 54rem)');
     function showMenu(open) {
       menu.setAttribute('aria-expanded', String(open));
       nav.hidden = narrow.matches && !open;
@@ -58,7 +64,7 @@
       const link = event.target.closest('a');
       if (link && narrow.matches) {
         showMenu(false);
-        if (link.hash && link.pathname === location.pathname) document.querySelector(link.hash)?.focus();
+        if (link.hash && link.pathname === location.pathname) document.getElementById(link.hash.slice(1))?.focus();
       }
     });
   });

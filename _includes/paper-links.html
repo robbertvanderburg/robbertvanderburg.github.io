@@ -1,7 +1,10 @@
 {% assign preprint_doi = site.data.preprint_dois[p.arxiv] %}
-<div class="paper-links">
+{% capture paper_resources %}
   {% if p.arxiv and p.arxiv != '' %}
-    <a href="https://arxiv.org/abs/{{ p.arxiv | escape }}">arXiv abstract<span class="sr-only"> for {{ p.title | escape }}</span></a>
+    {% assign abstract_url = p.arxiv | prepend: 'https://arxiv.org/abs/' %}
+    {% unless include.primary_url == abstract_url %}
+      <a href="{{ abstract_url | escape }}">arXiv abstract<span class="sr-only"> for {{ p.title | escape }}</span></a>
+    {% endunless %}
   {% endif %}
   {% if p.oaPdf and p.oaPdf != '' %}
     <a href="{{ p.oaPdf | escape }}">PDF<span class="sr-only"> of {{ p.title | escape }}</span></a>
@@ -11,4 +14,6 @@
   {% elsif preprint_doi %}
     <a href="https://doi.org/{{ preprint_doi | escape }}">Preprint DOI<span class="sr-only"> for {{ p.title | escape }}</span></a>
   {% endif %}
-</div>
+{% endcapture %}
+{% assign paper_resources = paper_resources | strip %}
+{% if paper_resources != '' %}<div class="paper-links">{{ paper_resources }}</div>{% endif %}

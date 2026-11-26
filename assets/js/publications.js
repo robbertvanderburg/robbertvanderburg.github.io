@@ -8,11 +8,11 @@
   const count = document.querySelector('#pub-count');
   const papers = Array.from(list.children);
   function filter() {
-    const query = search.value.trim().toLowerCase();
+    const terms = search.value.toLowerCase().match(/\S+/g) || [];
     let matches = 0;
     papers.forEach(paper => {
       const data = paper.dataset;
-      const textMatches = [data.title, data.authors, data.venue].some(value => value.includes(query));
+      const textMatches = terms.every(term => data.search.includes(term));
       paper.hidden = !textMatches || (year.value !== '' && year.value !== data.year);
       if (!paper.hidden) matches++;
     });

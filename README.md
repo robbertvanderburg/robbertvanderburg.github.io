@@ -106,7 +106,7 @@ Publications update **automatically**. Every day at 04:17 UTC, the GitHub Action
 
 ### Styling
 
-All colours are CSS custom properties at the top of `assets/css/style.scss`, with a light and a dark set. The newest preprint uses a static network illustration in `assets/images/network-study.svg`.
+All colours are CSS custom properties at the top of `assets/css/style.scss`, with a light and a dark set. The homepage research overview uses the static illustration in `assets/images/network-study.svg`.
 
 ## Local development
 

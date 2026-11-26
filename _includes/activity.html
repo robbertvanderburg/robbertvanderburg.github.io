@@ -1,10 +1,18 @@
-<article class="record" id="update-{{ item.date | date: '%Y-%m-%d' }}">
-  <time class="meta year" datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%d %b %Y' }}</time>
-  <div>{% if item.title %}
-    <p class="meta category">{{ item.category }}</p>
+{% assign date_format = '%d %b %Y' %}
+{% if include.short_date %}{% assign date_format = '%d %b' %}{% endif %}
+<article class="record{% if include.compact %} record-compact{% endif %}" id="update-{{ item.date | date: '%Y-%m-%d' }}">
+  <header class="record-meta">
+    <time class="meta year" datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: date_format }}</time>
+    {% if item.category %}<span>{{ item.category | escape }}</span>{% endif %}
+  </header>
+  {% if item.title %}
     <h3>{% if include.compact %}<a href="{{ '/news/' | relative_url }}#update-{{ item.date | date: '%Y-%m-%d' }}">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3>
-    {% unless include.compact %}<p>{{ item.text }}</p>{% endunless %}
-    <div class="paper-links">{% for link in item.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
-    {% if item.slides %}<a href="{{ item.slides | relative_url }}" download>Download slides (PDF)</a>{% endif %}</div>
-  {% else %}<p>{{ item.text }}</p>{% endif %}</div>
+  {% endif %}
+  {% if item.title == nil or include.compact != true %}<p>{{ item.text }}</p>{% endif %}
+  {% if item.links.size > 0 or item.slides %}
+    <div class="paper-links">
+      {% if item.slides %}<a href="{{ item.slides | relative_url }}" download>Slides (PDF)</a>{% endif %}
+      {% for link in item.links %}<a href="{{ link.url | escape }}">{{ link.label | escape }}</a>{% endfor %}
+    </div>
+  {% endif %}
 </article>
