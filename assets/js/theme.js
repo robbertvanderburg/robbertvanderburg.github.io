@@ -37,6 +37,8 @@
     panel.classList.add('dismiss-immediately');
     header.classList.add('nav-ready');
     let compact = menu.offsetWidth > 0;
+    let headerWidth = header.clientWidth;
+    let focusedControl = null;
 
     function setMenu(open, animateClose = false) {
       panel.classList.toggle('dismiss-immediately', !open && !animateClose);
@@ -56,11 +58,18 @@
         setMenu(false, true);
       }
     });
+    document.addEventListener('pointerdown', event => {
+      if (!header.contains(event.target)) focusedControl = null;
+    });
     document.addEventListener('click', event => {
-      if (!header.contains(event.target)) closeMenu();
+      if (!header.contains(event.target)) {
+        if (panel.contains(document.activeElement)) menu.focus({preventScroll: true});
+        closeMenu();
+      }
     });
     document.addEventListener('focusin', event => {
-      if (!header.contains(event.target)) closeMenu();
+      focusedControl = header.contains(event.target) ? event.target : null;
+      if (event.target !== menu && !panel.contains(event.target)) closeMenu();
     });
     header.addEventListener('click', event => {
       const link = event.target.closest('a');
@@ -70,10 +79,15 @@
     });
     function measureHeader() {
       const nextCompact = menu.offsetWidth > 0;
-      if (compact !== nextCompact) {
+      const nextWidth = header.clientWidth;
+      if (compact !== nextCompact || headerWidth !== nextWidth) {
+        const fromTrigger = focusedControl === menu;
+        const fromPanel = panel.contains(focusedControl);
         compact = nextCompact;
-        if (compact && panel.contains(document.activeElement)) menu.focus();
+        headerWidth = nextWidth;
         setMenu(false);
+        if (compact && fromPanel) menu.focus({preventScroll: true});
+        if (!compact && fromTrigger) panel.querySelector('a').focus({preventScroll: true});
       }
       const height = header.offsetHeight;
       root.style.setProperty('--mast-height', height + 'px');
@@ -81,6 +95,7 @@
     }
     measureHeader();
     window.addEventListener('resize', measureHeader);
+    window.addEventListener('pageshow', closeMenu);
     if ('ResizeObserver' in window) new ResizeObserver(() => requestAnimationFrame(measureHeader)).observe(header);
 
     function markLocation() {
