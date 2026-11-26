@@ -12,8 +12,8 @@
   {% if include.show_venue and item.venue %}<p>{{ item.venue | escape }}</p>{% endif %}
   {% if item.links.size > 0 or item.slides %}
     <div class="paper-links">
-      {% if item.slides %}<a href="{{ item.slides | relative_url }}" download>Slides (PDF)</a>{% endif %}
-      {% for link in item.links %}<a href="{{ link.url | escape }}">{{ link.label | escape }}</a>{% endfor %}
+      {% if item.slides %}<a href="{{ item.slides | relative_url }}" download>Slides (PDF)<span class="sr-only"> for {{ item.title | escape }}</span></a>{% endif %}
+      {% for link in item.links %}<a href="{{ link.url | escape }}">{{ link.label | escape }}{% if item.title and link.label == 'Read the preprint' %}<span class="sr-only"> on {{ item.title | escape }}</span>{% endif %}</a>{% endfor %}
     </div>
   {% endif %}
 </article>

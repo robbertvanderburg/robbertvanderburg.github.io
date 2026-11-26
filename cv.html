@@ -10,16 +10,28 @@ description: Academic CV of Robbert van der Burg, including education, doctoral 
     <p><strong>{{ site.author.name }}</strong><br>{{ site.author.department }}, {{ site.author.affiliation }}<br>
       <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
     </p>
-    <button type="button" class="button button-secondary cv-print" data-print hidden>Print CV</button>
+    <div class="cv-tools">
+      <a class="button button-secondary" href="{{ '/assets/downloads/robbert-van-der-burg-cv.pdf' | relative_url }}" download>Download CV (PDF)</a>
+      <button type="button" class="text-action" data-print hidden>Print CV</button>
+    </div>
   </div>
 </header>
 <div class="cv-grid">
-<nav class="contents" aria-labelledby="cv-contents">
-  <p class="meta" id="cv-contents">On this page</p>
+{% capture cv_links %}
   <a href="#education">Education</a>
   <a href="#research">Research</a>
   <a href="#teaching">Teaching</a>
   <a href="#talks">Talks &amp; presentations</a>
+{% endcapture %}
+<nav class="contents" aria-label="CV sections">
+  <div class="contents-rail">
+    <p class="meta">On this page</p>
+    {{ cv_links }}
+  </div>
+  <details class="contents-menu">
+    <summary>On this page</summary>
+    <div class="contents-links">{{ cv_links }}</div>
+  </details>
 </nav>
 <div>
 <section id="education" class="cv-section" tabindex="-1">
@@ -67,7 +79,7 @@ description: Academic CV of Robbert van der Burg, including education, doctoral 
 {% for item in talks %}{% if item.slides %}<article><time class="meta" datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%d %B %Y' }}</time>
 <h3>{{ item.title | escape }}</h3>
 <p>{{ item.venue | escape }}</p>
-<div class="paper-links"><a href="{{ item.slides | relative_url }}" download>Slides (PDF)</a></div>
+<div class="paper-links"><a href="{{ item.slides | relative_url }}" download>Slides (PDF)<span class="sr-only"> for {{ item.title | escape }}</span></a></div>
 </article>{% endif %}{% endfor %}</section>
 </div>
 </div>

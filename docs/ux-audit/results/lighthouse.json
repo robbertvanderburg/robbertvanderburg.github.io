@@ -1,0 +1,418 @@
+[
+  {
+    "phase": "before",
+    "page": "cv",
+    "preset": "desktop",
+    "measured": "2026-11-26T21:43:17.235Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": false,
+      "width": 1350,
+      "height": 940,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 250.3361,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "before",
+    "page": "cv",
+    "preset": "mobile",
+    "measured": "2026-11-26T21:43:07.402Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 927.6189999999999,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "before",
+    "page": "home",
+    "preset": "desktop",
+    "measured": "2026-11-26T21:42:37.661Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": false,
+      "width": 1350,
+      "height": 940,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 542.39865,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "before",
+    "page": "home",
+    "preset": "mobile",
+    "measured": "2026-11-26T21:42:27.586Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 1087.7621,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "before",
+    "page": "news",
+    "preset": "desktop",
+    "measured": "2026-11-26T21:43:36.819Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": false,
+      "width": 1350,
+      "height": 940,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 246.38959999999997,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "before",
+    "page": "news",
+    "preset": "mobile",
+    "measured": "2026-11-26T21:43:27.033Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 923.5319999999999,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "before",
+    "page": "publications",
+    "preset": "desktop",
+    "measured": "2026-11-26T21:42:57.549Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": false,
+      "width": 1350,
+      "height": 940,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 250.19420000000002,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "before",
+    "page": "publications",
+    "preset": "mobile",
+    "measured": "2026-11-26T21:42:47.706Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 1051.2754,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "after",
+    "page": "cv",
+    "preset": "desktop",
+    "measured": "2026-11-26T21:50:30.277Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": false,
+      "width": 1350,
+      "height": 940,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 251.6683,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "after",
+    "page": "cv",
+    "preset": "mobile",
+    "measured": "2026-11-26T21:50:20.210Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 936.0307,
+    "cls": 0.0003676634637134867,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "after",
+    "page": "home",
+    "preset": "desktop",
+    "measured": "2026-11-26T21:49:49.599Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": false,
+      "width": 1350,
+      "height": 940,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 542.02365,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "after",
+    "page": "home",
+    "preset": "mobile",
+    "measured": "2026-11-26T21:49:39.680Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 1080.2305,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "after",
+    "page": "news",
+    "preset": "desktop",
+    "measured": "2026-11-26T21:50:49.969Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": false,
+      "width": 1350,
+      "height": 940,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 249.22570000000002,
+    "cls": 0.0001511111111111111,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "after",
+    "page": "news",
+    "preset": "mobile",
+    "measured": "2026-11-26T21:50:40.136Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 922.0934,
+    "cls": 0,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "after",
+    "page": "publications",
+    "preset": "desktop",
+    "measured": "2026-11-26T21:50:09.913Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": false,
+      "width": 1350,
+      "height": 940,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 256.4188,
+    "cls": 0.0003066649155065231,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  },
+  {
+    "phase": "after",
+    "page": "publications",
+    "preset": "mobile",
+    "measured": "2026-11-26T21:49:59.541Z",
+    "lighthouse": "13.6.0",
+    "throttling": "simulate",
+    "screen": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "host": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMilliseconds": 1051.9685,
+    "cls": 0.0006667286653814834,
+    "tbtMilliseconds": 0,
+    "warnings": []
+  }
+]

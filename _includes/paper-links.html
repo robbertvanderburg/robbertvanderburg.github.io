@@ -1,11 +1,5 @@
 {% assign preprint_doi = site.data.preprint_dois[p.arxiv] %}
 {% capture paper_resources %}
-  {% if p.arxiv and p.arxiv != '' %}
-    {% assign abstract_url = p.arxiv | prepend: 'https://arxiv.org/abs/' %}
-    {% unless include.primary_url == abstract_url %}
-      <a href="{{ abstract_url | escape }}">arXiv abstract<span class="sr-only"> for {{ p.title | escape }}</span></a>
-    {% endunless %}
-  {% endif %}
   {% if p.oaPdf and p.oaPdf != '' %}
     <a href="{{ p.oaPdf | escape }}">PDF<span class="sr-only"> of {{ p.title | escape }}</span></a>
   {% endif %}
@@ -13,6 +7,29 @@
     <a href="https://doi.org/{{ p.doi | escape }}">DOI<span class="sr-only"> for {{ p.title | escape }}</span></a>
   {% elsif preprint_doi %}
     <a href="https://doi.org/{{ preprint_doi | escape }}">{% unless include.compact %}Preprint {% endunless %}DOI<span class="sr-only"> for {{ p.title | escape }}</span></a>
+  {% endif %}
+  {% if p.arxiv and p.arxiv != '' %}
+    {% assign abstract_url = p.arxiv | prepend: 'https://arxiv.org/abs/' %}
+    {% if include.bibliography or include.primary_url != abstract_url %}
+      <a href="{{ abstract_url | escape }}">arXiv abstract<span class="sr-only"> for {{ p.title | escape }}</span></a>
+    {% endif %}
+  {% endif %}
+  {% if include.bibliography and p.authors and p.authors != '' and p.title != 'Untitled' %}
+    <details class="citation">
+      <summary>Cite<span class="sr-only"> {{ p.title | escape }}</span></summary>
+      <div class="citation-panel">
+        {% assign citation_doi = p.doi | default: preprint_doi %}
+        {% assign citation_url = p.url %}
+        {% if citation_doi and citation_doi != '' %}{% assign citation_url = citation_doi | prepend: 'https://doi.org/' %}{% endif %}
+        {% assign title_end = p.title | slice: -1, 1 %}
+        <p class="citation-text">{{ p.authors | escape }}{% if p.year %} ({{ p.year }}){% endif %}. {{ p.title | escape }}{% unless '.?!' contains title_end %}.{% endunless %}{% if p.venue and p.venue != '' %} {{ p.venue | escape }}.{% endif %}{% if citation_url and citation_url != '' %} {{ citation_url | escape }}{% endif %}</p>
+        <div class="citation-actions">
+          <button type="button" class="text-action" data-copy-citation hidden>Copy citation</button>
+          {% if p.arxiv and p.arxiv != '' %}<a href="https://arxiv.org/bibtex/{{ p.arxiv | escape }}">arXiv BibTeX<span class="sr-only"> for {{ p.title | escape }}</span></a>{% endif %}
+          <span role="status" class="copy-status"></span>
+        </div>
+      </div>
+    </details>
   {% endif %}
 {% endcapture %}
 {% assign paper_resources = paper_resources | strip %}

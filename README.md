@@ -134,3 +134,9 @@ bundle exec jekyll build
 ## Deployment
 
 GitHub Pages builds and deploys the site automatically on every push to `main`. If a deploy fails, see the **Actions** tab of the repository (the "pages build and deployment" run).
+
+## Responsive review and CV download
+
+The [UX review](docs/ux-audit/UX-REVIEW.md) covers the four public pages at phone, tablet and desktop sizes. The [test report](docs/ux-audit/TEST-REPORT.md) includes commands for the browser suite, screenshots and visual comparison.
+
+After editing CV content or print styling, run a production Jekyll build, run `npm run cv:pdf`, then build again to include the refreshed PDF. Commit the PDF and its receipt in `scripts/cv-export.json`. Use `npm run cv:pdf -- --check` to compare the saved artifact with the current print text and links. Development dependencies and browser setup are in the test report.

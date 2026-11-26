@@ -7,7 +7,7 @@
   </div>
   <div class="paper-body">
     <{{ paper_heading }} class="paper-title">{% if p.url and p.url != '' %}<a href="{{ p.url | escape }}">{{ p.title | escape }}</a>{% else %}{{ p.title | escape }}{% endif %}</{{ paper_heading }}>
-    <p class="authors">{{ p.authors | escape }}</p>
-    {% include paper-links.html primary_url=p.url %}
+    <p class="authors">{% include paper-authors.html %}</p>
+    {% include paper-links.html primary_url=p.url bibliography=include.bibliography %}
   </div>
 </li>
