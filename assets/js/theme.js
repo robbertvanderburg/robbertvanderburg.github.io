@@ -34,17 +34,26 @@
     const header = document.querySelector('.masthead');
     const menu = header.querySelector('.menu-toggle');
     const panel = document.getElementById('more-navigation');
+    panel.classList.add('dismiss-immediately');
     header.classList.add('nav-ready');
-    function closeMenu() {
-      if (menu.getAttribute('aria-expanded') === 'true') menu.setAttribute('aria-expanded', 'false');
+    let compact = menu.offsetWidth > 0;
+
+    function setMenu(open, animateClose = false) {
+      panel.classList.toggle('dismiss-immediately', !open && !animateClose);
+      panel.inert = compact && !open;
+      menu.setAttribute('aria-expanded', String(open));
     }
+    function closeMenu() {
+      if (menu.getAttribute('aria-expanded') === 'true') setMenu(false);
+    }
+    setMenu(false);
     menu.addEventListener('click', () => {
-      menu.setAttribute('aria-expanded', String(menu.getAttribute('aria-expanded') !== 'true'));
+      setMenu(menu.getAttribute('aria-expanded') !== 'true', true);
     });
     header.addEventListener('keydown', event => {
       if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
-        closeMenu();
         menu.focus();
+        setMenu(false, true);
       }
     });
     document.addEventListener('click', event => {
@@ -59,13 +68,12 @@
       closeMenu();
       if (link.hash && link.pathname === location.pathname) document.getElementById(link.hash.slice(1))?.focus();
     });
-    let compact = menu.offsetWidth > 0;
     function measureHeader() {
       const nextCompact = menu.offsetWidth > 0;
       if (compact !== nextCompact) {
         compact = nextCompact;
         if (compact && panel.contains(document.activeElement)) menu.focus();
-        closeMenu();
+        setMenu(false);
       }
       const height = header.offsetHeight;
       root.style.setProperty('--mast-height', height + 'px');
