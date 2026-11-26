@@ -498,9 +498,9 @@ button { cursor: pointer; }
   }
 }
 @container mast (max-width: 18rem) {
-  .mast-inner { grid-template-columns: minmax(0, 1fr) auto auto; gap: 0 .35rem; }
-  .masthead .wordmark { grid-column: 1 / -1; }
-  .mast-inner > .nav-direct { justify-self: start; }
+  .mast-inner { display: flex; flex-wrap: wrap; gap: 0 .25rem; padding-inline: min(var(--gutter), 4vw); }
+  .masthead .wordmark { flex-basis: 100%; }
+  .mast-inner > .nav-more { flex-basis: 100%; }
 }
 @container mast (max-width: 22rem) {
   .masthead .wordmark svg { display: none; }
