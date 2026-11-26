@@ -12,30 +12,32 @@ description: Papers and preprints by Robbert van der Burg on networks, random wa
 {% if pubs.size > 0 %}
 <section class="bibliography" aria-label="Bibliography">
   <div class="bibliography-toolbar">
-    <div class="filters" hidden>
+    <div class="filters" role="search" aria-label="Publications" hidden>
       <label class="search-field">
         <span>Search papers</span>
-        <input id="pub-search" type="search" placeholder="Title, author or year">
+        <input id="pub-search" type="search" placeholder="Title, author or year" aria-controls="pub-container">
       </label>
       {% assign years = pubs | map: 'year' | compact | uniq | sort | reverse %}
       {% assign undated = pubs | where_exp: 'entry', 'entry.year == nil' %}
       <label{% if years.size < 2 and undated.size == 0 or years.size == 0 %} hidden{% endif %}>
         <span>Publication year</span>
-        <select id="pub-year-filter">
+        <select id="pub-year-filter" aria-controls="pub-container">
           <option value="">All years</option>
           {% for year in years %}<option value="{{ year }}">{{ year }}</option>{% endfor %}
           {% if undated.size > 0 %}<option value="undated">Undated</option>{% endif %}
         </select>
       </label>
     </div>
-    <p class="meta" id="pub-count" role="status">{{ pubs.size }} paper{% if pubs.size != 1 %}s{% endif %}</p>
+    <div class="filter-status">
+      <p class="meta" id="pub-count" role="status">{{ pubs.size }} paper{% if pubs.size != 1 %}s{% endif %}</p>
+      <button class="text-action" type="button" id="pub-reset" hidden>Clear search and filters</button>
+    </div>
   </div>
-  <ul class="pub-list" id="pub-container">{% for p in pubs %}{% include paper.html heading='h2' %}{% endfor %}</ul>
+  <ul class="pub-list" id="pub-container">{% for p in pubs %}{% include paper.html heading='h2' bibliography=true %}{% endfor %}</ul>
   <div id="pub-empty" hidden>
     <h2>No matching papers</h2>
     <p>Try another title, author or year.</p>
-    <button class="button" type="button" id="pub-reset">Clear search and filters</button>
   </div>
 </section>
 {% endif %}
-<p class="source-note">{% if pubs.size > 0 %}Bibliography synchronized daily from{% else %}Find the latest papers on{% endif %} <a href="https://www.semanticscholar.org/author/{{ site.author.semantic_scholar }}">Semantic Scholar</a>. See also <a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}">Google Scholar</a>.</p>
+<p class="source-note">{% if pubs.size > 0 %}Bibliography synchronized daily from{% else %}No papers are listed here yet. Find the latest papers on{% endif %} <a href="https://www.semanticscholar.org/author/{{ site.author.semantic_scholar }}">Semantic Scholar</a>. See also <a href="https://scholar.google.com/citations?user={{ site.author.google_scholar }}">Google Scholar</a>.</p>

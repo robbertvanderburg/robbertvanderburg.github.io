@@ -1,0 +1,5 @@
+{%- assign author_names = p.authors | split: ', ' -%}
+{%- for name in author_names -%}
+  {%- if name == site.author.name -%}<strong>{{ name | escape }}</strong>{%- else -%}{{ name | escape }}{%- endif -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor -%}
