@@ -381,7 +381,7 @@ button { cursor: pointer; }
   font-variant-numeric: tabular-nums;
 }
 .archive-entries .record:last-child { padding-bottom: 0; }
-.cv-print { margin-top: .85rem; }
+.cv-tools { margin-top: .85rem; gap: .35rem 1rem; }
 .cv-grid {
   display: grid; grid-template-columns: minmax(8.75rem, 19%) minmax(0, 1fr);
   gap: clamp(1.5rem, 4vw, 3.75rem);
@@ -389,8 +389,10 @@ button { cursor: pointer; }
 }
 .contents {
   align-self: start; position: sticky; top: calc(var(--sticky-height, 0px) + 1.25rem);
-  display: grid; padding-inline-end: .85rem; border-inline-end: 1px solid var(--line);
+  padding-inline-end: .85rem; border-inline-end: 1px solid var(--line);
 }
+.contents-rail { display: grid; }
+.contents-menu { display: none; }
 .contents p { margin-bottom: .45rem; }
 .contents a { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: .94rem; font-weight: 550; }
 .cv-section + .cv-section { margin-top: clamp(2.4rem, 5vw, 3.4rem); }
@@ -399,6 +401,12 @@ button { cursor: pointer; }
 .cv-section h3 { margin: .25rem 0 .4rem; }
 .cv-section ul { padding-left: 1.1rem; margin: .5rem 0 0; }
 .cv-section li + li { margin-top: .32rem; }
+@media screen {
+  .cv-section ul a, .cv-section article > a {
+    display: inline-flex; align-items: center; justify-self: start; min-height: 2.75rem;
+  }
+  .cv-section li + li { margin-top: 0; }
+}
 @container page (min-width: 36rem) {
   .archive-year > h2 { position: sticky; top: calc(var(--sticky-height, 0px) + 1.25rem); }
   .cv-section article {
@@ -406,7 +414,7 @@ button { cursor: pointer; }
   }
   .cv-section article > :not(:first-child) { grid-column: 2; }
   .cv-section article h3 { margin: 0; }
-  .cv-section article .meta { padding-top: .25rem; }
+  .cv-section article .meta { grid-row: 1 / span 2; padding-top: .25rem; }
 }
 @media (prefers-reduced-motion: no-preference) {
   .button { transition: box-shadow var(--motion-feedback) ease-out; }
@@ -522,12 +530,14 @@ button { cursor: pointer; }
   .masthead .wordmark svg { display: none; }
 }
 @container page (max-width: 56rem) {
-  .cv-grid { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding-top: 1rem; }
+  .cv-grid { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding-top: 0; }
   .contents {
-    position: static; display: flex; flex-wrap: wrap; gap: 0 1.3rem;
-    padding: 0 0 .65rem; border: 0; border-bottom: 1px solid var(--line);
+    position: static; padding: .35rem 0; border: 0; border-bottom: 1px solid var(--line);
   }
-  .contents p { width: 100%; margin-bottom: 0; }
+  .contents-rail { display: none; }
+  .contents-menu { display: block; }
+  .contents-menu summary { padding-block: .55rem; min-height: 2.75rem; cursor: pointer; font-weight: 600; color: var(--wine); }
+  .contents-links { display: flex; flex-wrap: wrap; gap: 0 1.25rem; }
 }
 @container page (max-width: 48rem) {
   .research-intro { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
@@ -575,9 +585,7 @@ button { cursor: pointer; }
   .heading-row { align-items: start; flex-direction: column; gap: .25rem; margin-bottom: .8rem; }
   .bibliography-toolbar { align-items: start; flex-direction: column; gap: .25rem; padding-block: 1rem .45rem; }
   .filters { width: 100%; }
-  #pub-count { align-self: start; padding: 0; }
-  .contents { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 .75rem; }
-  .contents p { grid-column: 1 / -1; }
+  .contents-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 .75rem; }
   .archive-year > h2 { font-size: 2.5rem; }
 }
 @container page (max-width: 16.5rem) {
@@ -602,16 +610,24 @@ button { cursor: pointer; }
     background: var(--paper); color-scheme: light;
   }
   body { width: 100%; margin: 0; border-radius: 0; box-shadow: none; font-size: 10.5pt; line-height: 1.45; }
-  .masthead, .footer, .filters, .contents, .cv-print { display: none; }
+  .masthead, .footer, .filters, .contents, .cv-tools { display: none; }
   .wrap { width: 100%; padding-inline: 0; }
   .preprint-note { background: white; color: var(--ink); border: 1px solid var(--line); }
   .preprint-note a, .preprint-note .authors, .note-meta { color: var(--ink); }
   .page-intro { display: block; padding-block: 0 1rem; }
   .page-intro h1 { font-size: 28pt; margin-bottom: .5rem; }
-  .cv-grid { display: block; padding-block: 1rem 0; }
-  .cv-section + .cv-section { margin-top: 1.2rem; }
-  .cv-section h2 { font-size: 18pt; break-after: avoid; }
-  .cv-section h3 { font-size: 13pt; }
-  .cv-section article { padding-block: .6rem; }
+  .cv-intro { display: grid; grid-template-columns: .8fr 1.2fr; gap: 1rem; padding-bottom: .7rem; }
+  .cv-intro h1 { margin: 0; }
+  .cv-intro p { font-size: 10.5pt; }
+  .cv-grid { display: block; padding-block: .7rem 0; line-height: 1.35; }
+  .cv-section + .cv-section { margin-top: .65rem; }
+  .cv-section h2 { font-size: 16pt; margin-bottom: .35rem; break-after: avoid; }
+  .cv-section h3 { font-size: 12pt; }
+  .cv-section article { padding-block: .42rem; row-gap: .1rem; }
+  .cv-section p { max-width: none; }
+  .cv-section p + p, .cv-section ul { margin-top: .2rem; }
+  .cv-section li + li { margin-top: .12rem; }
+  .cv-section .paper-links a { min-height: 0; min-width: 0; font-size: 10pt; }
+  .cv-section .paper-links { margin-top: .15rem; }
   .cv-section article, .pub-item { break-inside: avoid; }
 }
