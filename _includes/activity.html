@@ -9,6 +9,7 @@
     <h3>{% if include.compact %}<a href="{{ '/news/' | relative_url }}#update-{{ item.date | date: '%Y-%m-%d' }}">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3>
   {% endif %}
   {% if item.title == nil or include.compact != true %}<p>{{ item.text }}</p>{% endif %}
+  {% if include.show_venue and item.venue %}<p>{{ item.venue | escape }}</p>{% endif %}
   {% if item.links.size > 0 or item.slides %}
     <div class="paper-links">
       {% if item.slides %}<a href="{{ item.slides | relative_url }}" download>Slides (PDF)</a>{% endif %}

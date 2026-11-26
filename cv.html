@@ -24,21 +24,15 @@ description: Academic CV of Robbert van der Burg, including education, doctoral 
 <div>
 <section id="education" class="cv-section" tabindex="-1">
 <h2>Education</h2>
-<article><span class="meta">2025 – present</span>
-<h3>PhD candidate in Mathematics</h3>
-<p>Vrije Universiteit Amsterdam, Faculty of Science</p>
+{% for degree in site.data.education %}
+<article>
+  <span class="meta">{{ degree.period }}</span>
+  <h3>{{ degree.title | escape }}</h3>
+  <p>{{ degree.institution | escape }}{% if degree.detail %}, {{ degree.detail | escape }}{% endif %}{% if degree.specialization %} · {{ degree.specialization | escape }}{% endif %}</p>
+  {% if degree.thesis %}<p>Thesis: <i>{{ degree.thesis | escape }}</i></p>{% endif %}
+  {% if degree.description %}<p>{{ degree.description | escape }}</p>{% endif %}
 </article>
-<article><span class="meta">2024 – 2025</span>
-<h3>MSc in Econometrics and Operations Research</h3>
-<p>Vrije Universiteit Amsterdam · Operations Research Theory</p>
-<p>Thesis: <i>A Fundamental Approach to the Kemeny Constant, and the Mean and Variance of the First Passage Times in Time-Weighted Markov Chains.</i>
-</p>
-</article>
-<article><span class="meta">2020 – 2024</span>
-<h3>BSc in Mathematics</h3>
-<p>Leiden University</p>
-<p>My thesis, supervised by Floske Spieksma, explored metastable behavior in a Gani SIS epidemic model, quasi-stationary distributions and convergence on two timescales.</p>
-</article>
+{% endfor %}
 </section>
 <section id="research" class="cv-section" tabindex="-1">
 <h2>Research</h2>

@@ -12,7 +12,7 @@
   {% if p.doi and p.doi != '' %}
     <a href="https://doi.org/{{ p.doi | escape }}">DOI<span class="sr-only"> for {{ p.title | escape }}</span></a>
   {% elsif preprint_doi %}
-    <a href="https://doi.org/{{ preprint_doi | escape }}">Preprint DOI<span class="sr-only"> for {{ p.title | escape }}</span></a>
+    <a href="https://doi.org/{{ preprint_doi | escape }}">{% unless include.compact %}Preprint {% endunless %}DOI<span class="sr-only"> for {{ p.title | escape }}</span></a>
   {% endif %}
 {% endcapture %}
 {% assign paper_resources = paper_resources | strip %}

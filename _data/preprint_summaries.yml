@@ -1,0 +1,2 @@
+# Editorial summaries indexed by arXiv ID so a new lead never inherits old copy.
+"2611.20985": "We combine optimization with short simulations to choose how to reconfigure a power grid and adjust generation and storage during uncertain outages. We test the controller on the AI4RealNet L2RPN benchmark."

@@ -15,16 +15,26 @@ description: Robbert van der Burg, PhD candidate in Mathematics at Vrije Univers
       <p class="role">PhD candidate in <span>Mathematics</span></p>
       <p class="institutional">{{ site.author.affiliation }}</p>
     </div>
-    <div class="profile-portrait">
-      <div class="profile-matte">
-        <img class="profile-cutout" src="{{ '/assets/images/robbert-cutout-ai.webp' | relative_url }}"
-             srcset="{{ '/assets/images/robbert-cutout-small.webp' | relative_url }} 320w, {{ '/assets/images/robbert-cutout-ai.webp' | relative_url }} 760w"
-             sizes="(max-width: 40em) min(25vw, 9rem), (max-width: 68em) 27vw, 19rem"
-             width="760" height="1035" alt="Robbert van der Burg" fetchpriority="high">
+    <div class="profile-visual">
+      <div class="profile-art">
+        {% include profile-network.html %}
+        <div class="profile-portrait">
+          <div class="profile-matte">
+            <img class="profile-cutout" src="{{ '/assets/images/robbert-cutout-ai.webp' | relative_url }}"
+                 srcset="{{ '/assets/images/robbert-cutout-small.webp' | relative_url }} 320w, {{ '/assets/images/robbert-cutout-ai.webp' | relative_url }} 760w"
+                 sizes="(max-width: 40em) 28vw, (max-width: 76em) 26vw, 16.5rem"
+                 width="760" height="1035" alt="Robbert van der Burg" fetchpriority="high">
+          </div>
+        </div>
       </div>
     </div>
     <div class="profile-intro">
       <p class="intro-copy">I study how extreme weather affects power grids, using probability theory, network science and applied statistics to understand failures across a network.</p>
+      <ul class="research-tags" aria-label="Research topics">
+        <li><a href="#random-walks">Probability</a></li>
+        <li><a href="#network-paths">Network science</a></li>
+        <li><a href="#infrastructure">Power grids</a></li>
+      </ul>
       <div class="profile-actions">
         <a class="button" href="#research">Explore research</a>
         <a class="button button-secondary" href="{{ '/cv/' | relative_url }}">Academic CV</a>
@@ -41,11 +51,19 @@ description: Robbert van der Burg, PhD candidate in Mathematics at Vrije Univers
   </div>
   {% if lead %}{% assign p = lead %}
     <section class="preprint-note" aria-labelledby="lead-title">
-      <p class="meta note-meta"><span>Latest preprint</span><span>{{ p.year }}</span></p>
+      <p class="meta note-meta">Latest preprint{% if p.year %} <span aria-hidden="true">·</span> {{ p.year }}{% endif %}</p>
       <div>
-        <h2 id="lead-title"><a href="{{ p.url | escape }}">{{ p.title | escape }}</a></h2>
+        <h2 id="lead-title">{% if p.url and p.url != '' %}<a href="{{ p.url | escape }}">{{ p.title | escape }}</a>{% else %}{{ p.title | escape }}{% endif %}</h2>
         <p class="authors">{{ p.authors | escape }}</p>
-        {% include paper-links.html primary_url=p.url %}
+        {% include paper-links.html primary_url=p.url compact=true %}
+        {% assign summary = site.data.preprint_summaries[p.arxiv] %}
+        {% if summary %}
+          <details class="preprint-preview">
+            <summary>Abstract preview</summary>
+            <p>{{ summary | escape }}</p>
+            {% if p.url and p.url != '' %}<a href="{{ p.url | escape }}">Read the full abstract</a>{% endif %}
+          </details>
+        {% endif %}
       </div>
     </section>
   {% endif %}
@@ -64,36 +82,61 @@ description: Robbert van der Burg, PhD candidate in Mathematics at Vrije Univers
       <figcaption>Dashed contours mark the region exposed to the same weather system.</figcaption>
     </figure>
   </div>
-  <ul class="directions">
-    <li id="random-walks">
-      <h3>Random walks &amp; Markov chains</h3>
-      <p>I study how edge weights change hitting times, Kemeny constants and network optimization.</p>
-      <a href="https://arxiv.org/abs/2603.26414">Traversal costs preprint</a>
-    </li>
-    <li id="infrastructure">
-      <h3>Infrastructure reliability</h3>
-      <p>I study ways to distinguish dependence within a network from correlations driven by shared weather.</p>
-      <a href="{{ '/NetSci_Presentation_fin.pdf' | relative_url }}">NetSci slides (PDF)</a>
-    </li>
-    <li id="opinion-dynamics">
-      <h3>Opinion dynamics</h3>
-      <p>I explore connections between quasi-stationary distributions and the DeGroot and Friedkin–Johnsen opinion models.</p>
-      <a href="{{ '/cv/#education' | relative_url }}">Thesis background</a>
-    </li>
-  </ul>
+  <section class="featured-research" aria-labelledby="projects-title">
+    <h3 id="projects-title">Featured research</h3>
+    <ul class="directions">
+      <li id="infrastructure" tabindex="-1">
+        <h4>Weather-driven failures</h4>
+        <p>I study how to distinguish dependence within a power grid from correlations driven by shared weather.</p>
+        <a href="{{ '/NetSci_Presentation_fin.pdf' | relative_url }}">NetSci slides (PDF)</a>
+      </li>
+      <li id="random-walks" tabindex="-1">
+        <h4>Random walks &amp; Markov chains</h4>
+        <p>I study how edge weights change hitting times, Kemeny constants and network optimization.</p>
+        <a href="https://arxiv.org/abs/2603.26414">Traversal costs preprint</a>
+      </li>
+      <li id="network-paths" tabindex="-1">
+        <h4>Connectivity &amp; path weights</h4>
+        <p>I study how multiplying weights along paths changes measures of connectivity and the ranking of nodes.</p>
+        <a href="https://arxiv.org/abs/2610.21474">Path weights preprint</a>
+      </li>
+    </ul>
+    <p class="other-research" id="opinion-dynamics">I also explore how quasi-stationary distributions relate to the DeGroot and Friedkin–Johnsen opinion models.</p>
+  </section>
 </section>
 {% assign other_papers = site.data.publications | where_exp: 'entry', 'entry.title != lead.title' %}
 {% if other_papers.size > 0 %}<section class="section">
 <div class="heading-row">
-<h2>Selected publications</h2><a href="{{ '/publications/' | relative_url }}">View all publications</a>
+<h2>Recent publications</h2><a href="{{ '/publications/' | relative_url }}">View all publications</a>
 </div>
 <ul class="pub-list">{% for p in other_papers limit:3 %}{% include paper.html %}{% endfor %}</ul>
 </section>{% endif %}
+{% assign recent_talks = site.data.news | where_exp: 'item', 'item.venue != nil' | sort: 'date' | reverse %}
+{% if recent_talks.size > 0 %}
 <section class="section">
-<div class="heading-row">
-<h2>News &amp; talks</h2><a href="{{ '/news/' | relative_url }}">All updates</a>
-</div>
-{% assign activity = site.data.news | sort: 'date' | reverse %}{% for item in activity limit:3 %}{% include activity.html compact=true %}{% endfor %}</section>
+  <div class="heading-row">
+    <h2>Recent talks</h2><a href="{{ '/news/' | relative_url }}">All news &amp; talks</a>
+  </div>
+  {% for item in recent_talks limit:3 %}{% include activity.html compact=true show_venue=true %}{% endfor %}
+</section>
+{% endif %}
+<section class="section">
+  <div class="heading-row">
+    <h2>Academic timeline</h2><a href="{{ '/cv/' | relative_url }}">View academic CV</a>
+  </div>
+  <ol class="academic-timeline">
+    {% for degree in site.data.education %}
+      <li>
+        <span class="meta">{{ degree.period | escape }}</span>
+        <div>
+          <h3>{{ degree.title | escape }}</h3>
+          <p class="timeline-institution">{{ degree.institution | escape }}</p>
+          <p>{{ degree.focus | escape }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
 <section class="contact split" id="contact" tabindex="-1" aria-labelledby="contact-title">
 <h2 id="contact-title">Get in touch</h2>
 <div><a class="email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
